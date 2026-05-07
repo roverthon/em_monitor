@@ -1,0 +1,2031 @@
+Component: ARM Compiler 5.06 update 7 (build 960) Tool: armlink [4d3601]
+
+==============================================================================
+
+Section Cross References
+
+    main.o(.text) refers to event_groups.o(.text) for xEventGroupWaitBits
+    main.o(.text) refers to queue.o(.text) for xQueueSemaphoreTake
+    main.o(.text) refers to memseta.o(.text) for __aeabi_memclr4
+    main.o(.text) refers to printfa.o(i.__0printf) for __2printf
+    main.o(.text) refers to esp8266_getweather.o(.text) for ESP8266_GetWeatherFunc
+    main.o(.text) refers to strcpy.o(.text) for strcpy
+    main.o(.text) refers to tasks.o(.text) for vTaskDelay
+    main.o(.text) refers to esp8266.o(.text) for ESP8266_OnLineInit
+    main.o(.text) refers to esp8266_gettime.o(.text) for ESP8266_GetTimeFunc
+    main.o(.text) refers to mq7.o(.text) for Get_MQ7_AO_Voltage
+    main.o(.text) refers to mq135.o(.text) for Get_MQ135_DO_Level
+    main.o(.text) refers to mq2.o(.text) for Get_MQ2_AO_Voltage
+    main.o(.text) refers to dht11.o(.text) for DHT11_GetData
+    main.o(.text) refers to adc.o(.text) for ADC3_IN5_GetLightVal
+    main.o(.text) refers to rtc.o(.text) for RTC_SetDateTime
+    main.o(.text) refers to stm32f4xx_rtc.o(.text) for RTC_GetTime
+    main.o(.text) refers to atoi.o(.text) for atoi
+    main.o(.text) refers to memmovea.o(.text) for __aeabi_memcpy4
+    main.o(.text) refers to strcmp.o(.text) for strcmp
+    main.o(.text) refers to lv_img.o(.text) for lv_img_create
+    main.o(.text) refers to lv_obj_pos.o(.text) for lv_obj_align
+    main.o(.text) refers to lv_label.o(.text) for lv_label_create
+    main.o(.text) refers to main.o(.data) for .data
+    main.o(.text) refers to esp8266_getweather.o(.bss) for results
+    main.o(.text) refers to main.o(.constdata) for .constdata
+    main.o(.text) refers to chezaibeijing.o(.constdata) for image_chezaibeijing
+    main.o(.text) refers to lv_obj_style_gen.o(.text) for lv_obj_set_style_text_color
+    main.o(.text) refers to pir.o(.text) for PIR_Scan
+    main.o(.text) refers to printfa.o(i.__0sprintf) for __2sprintf
+    main.o(.text) refers to f2d.o(.text) for __aeabi_f2d
+    main.o(.text) refers to lv_timer.o(.text) for lv_timer_handler
+    main.o(.text) refers to uart.o(.text) for UART1_Init
+    main.o(.text) refers to led.o(.text) for LED_Init
+    main.o(.text) refers to buzzer.o(.text) for BUZZER_Init
+    main.o(.text) refers to key.o(.text) for KEY_Init
+    main.o(.text) refers to lv_obj.o(.text) for lv_init
+    main.o(.text) refers to my_font.o(.constdata) for my_font
+    main.o(.text) refers to lv_port_disp.o(.text) for lv_port_disp_init
+    main.o(.text) refers to lv_port_indev.o(.text) for lv_port_indev_init
+    main.o(.text) refers to asrpro.o(.text) for ASRPRO_Init
+    main.o(.text) refers to misc.o(.text) for NVIC_PriorityGroupConfig
+    main.o(.text) refers to lv_hal_tick.o(.text) for lv_tick_inc
+    main.o(.text) refers to lv_hal_disp.o(.text) for lv_disp_get_default
+    main.o(.text) refers to lv_disp.o(.text) for lv_disp_get_scr_act
+    main.o(.text) refers to system_stm32f4xx.o(.data) for SystemCoreClock
+    main.o(.constdata) refers to main.o(.conststring) for .conststring
+    system_stm32f4xx.o(.text) refers to system_stm32f4xx.o(.data) for .data
+    lvgl_font.o(.constdata) refers to lvgl_font.o(.constdata) for unicode_list_1
+    lvgl_font.o(.constdata) refers to lvgl_font.o(.constdata) for glyph_bitmap
+    lvgl_font.o(.constdata) refers to lvgl_font.o(.constdata) for glyph_dsc
+    lvgl_font.o(.constdata) refers to lvgl_font.o(.constdata) for cmaps
+    lvgl_font.o(.constdata) refers to lvgl_font.o(.data) for cache
+    lvgl_font.o(.constdata) refers to lv_font_fmt_txt.o(.text) for lv_font_get_glyph_dsc_fmt_txt
+    lvgl_font.o(.constdata) refers to lvgl_font.o(.constdata) for font_dsc
+    tupian.o(.constdata) refers to tupian.o(.constdata) for img_tupian_map
+    chezaibeijing.o(.constdata) refers to chezaibeijing.o(.constdata) for img_chezaibeijing_map
+    my_font.o(.constdata) refers to my_font.o(.constdata) for unicode_list_1
+    my_font.o(.constdata) refers to my_font.o(.constdata) for glyph_bitmap
+    my_font.o(.constdata) refers to my_font.o(.constdata) for glyph_dsc
+    my_font.o(.constdata) refers to my_font.o(.constdata) for cmaps
+    my_font.o(.constdata) refers to my_font.o(.data) for cache
+    my_font.o(.constdata) refers to lv_font_fmt_txt.o(.text) for lv_font_get_glyph_dsc_fmt_txt
+    my_font.o(.constdata) refers to my_font.o(.constdata) for font_dsc
+    buzzer.o(.text) refers to stm32f4xx_rcc.o(.text) for RCC_AHB1PeriphClockCmd
+    buzzer.o(.text) refers to stm32f4xx_gpio.o(.text) for GPIO_Init
+    buzzer.o(.text) refers to delay.o(.text) for delay_ms
+    key.o(.text) refers to stm32f4xx_rcc.o(.text) for RCC_AHB1PeriphClockCmd
+    key.o(.text) refers to stm32f4xx_gpio.o(.text) for GPIO_Init
+    led.o(.text) refers to stm32f4xx_rcc.o(.text) for RCC_AHB1PeriphClockCmd
+    led.o(.text) refers to stm32f4xx_gpio.o(.text) for GPIO_Init
+    led.o(.text) refers to delay.o(.text) for delay_ms
+    exti.o(.text) refers to key.o(.text) for KEY_Init
+    exti.o(.text) refers to stm32f4xx_rcc.o(.text) for RCC_APB2PeriphClockCmd
+    exti.o(.text) refers to stm32f4xx_syscfg.o(.text) for SYSCFG_EXTILineConfig
+    exti.o(.text) refers to stm32f4xx_exti.o(.text) for EXTI_Init
+    exti.o(.text) refers to misc.o(.text) for NVIC_Init
+    exti.o(.text) refers to delay.o(.text) for DELAY_MyNms
+    timer.o(.text) refers to stm32f4xx_rcc.o(.text) for RCC_APB1PeriphClockCmd
+    timer.o(.text) refers to misc.o(.text) for NVIC_Init
+    timer.o(.text) refers to stm32f4xx_tim.o(.text) for TIM_TimeBaseInit
+    timer.o(.text) refers to lv_hal_tick.o(.text) for lv_tick_inc
+    at24cxx.o(.text) refers to iic.o(.text) for IIC_Init
+    at24cxx.o(.text) refers to delay.o(.text) for delay_ms
+    iic.o(.text) refers to stm32f4xx_rcc.o(.text) for RCC_AHB1PeriphClockCmd
+    iic.o(.text) refers to stm32f4xx_gpio.o(.text) for GPIO_Init
+    iic.o(.text) refers to delay.o(.text) for delay_us
+    lcd_font.o(.data) refers to lcd_font.o(.conststring) for .conststring
+    lcd_screen.o(.text) refers to delay.o(.text) for delay_us
+    lcd_screen.o(.text) refers to lcd_screen.o(.bss) for .bss
+    lcd_screen.o(.text) refers to dfltui.o(.text) for __aeabi_ui2d
+    lcd_screen.o(.text) refers to dmul.o(.text) for __aeabi_dmul
+    lcd_screen.o(.text) refers to dfixui.o(.text) for __aeabi_d2uiz
+    lcd_screen.o(.text) refers to lcd_screen.o(.data) for .data
+    lcd_screen.o(.text) refers to stm32f4xx_rcc.o(.text) for RCC_AHB1PeriphClockCmd
+    lcd_screen.o(.text) refers to stm32f4xx_gpio.o(.text) for GPIO_Init
+    lcd_screen.o(.text) refers to stm32f4xx_fsmc.o(.text) for FSMC_NORSRAMInit
+    lcd_screen.o(.text) refers to printfa.o(i.__0printf) for __2printf
+    lcd_screen.o(.text) refers to lcd_font.o(.constdata) for asc2_2412
+    lcd_screen.o(.text) refers to lcd_font.o(.constdata) for asc2_1206
+    lcd_screen.o(.text) refers to lcd_font.o(.constdata) for asc2_1608
+    lcd_screen.o(.text) refers to strncmp.o(.text) for strncmp
+    lcd_screen.o(.text) refers to lcd_font.o(.constdata) for g_font_dot_matrix_32
+    lcd_screen.o(.text) refers to lcd_font.o(.data) for g_font_dot_matrix_32_index
+    lcd_touch.o(.text) refers to delay.o(.text) for delay_us
+    lcd_touch.o(.text) refers to lcd_screen.o(.text) for LCD_DrawLine
+    lcd_touch.o(.text) refers to at24cxx.o(.text) for AT24CXX_WriteLenByte
+    lcd_touch.o(.text) refers to f2d.o(.text) for __aeabi_f2d
+    lcd_touch.o(.text) refers to printfa.o(i.__0printf) for __2printf
+    lcd_touch.o(.text) refers to lcd_touch.o(.data) for .data
+    lcd_touch.o(.text) refers to lcd_screen.o(.data) for POINT_COLOR
+    lcd_touch.o(.text) refers to dfltui.o(.text) for __aeabi_ui2d
+    lcd_touch.o(.text) refers to sqrt.o(i.__hardfp_sqrt) for __hardfp_sqrt
+    lcd_touch.o(.text) refers to dfixui.o(.text) for __aeabi_d2uiz
+    lcd_touch.o(.text) refers to cdcmple.o(.text) for __aeabi_cdcmple
+    lcd_touch.o(.text) refers to cdrcmple.o(.text) for __aeabi_cdrcmple
+    lcd_touch.o(.text) refers to dmul.o(.text) for __aeabi_dmul
+    lcd_touch.o(.text) refers to lcd_screen.o(.bss) for lcddev
+    lcd_touch.o(.text) refers to lcd_touch.o(.constdata) for .constdata
+    lcd_touch.o(.text) refers to stm32f4xx_rcc.o(.text) for RCC_AHB1PeriphClockCmd
+    lcd_touch.o(.text) refers to stm32f4xx_gpio.o(.text) for GPIO_Init
+    lcd_touch.o(.constdata) refers to lcd_touch.o(.conststring) for .conststring
+    lcd_touch.o(.data) refers to lcd_touch.o(.text) for TP_Init
+    adc.o(.text) refers to stm32f4xx_rcc.o(.text) for RCC_AHB1PeriphClockCmd
+    adc.o(.text) refers to stm32f4xx_gpio.o(.text) for GPIO_Init
+    adc.o(.text) refers to stm32f4xx_adc.o(.text) for ADC_CommonInit
+    adc.o(.text) refers to adc.o(.data) for .data
+    dht11.o(.text) refers to stm32f4xx_rcc.o(.text) for RCC_AHB1PeriphClockCmd
+    dht11.o(.text) refers to stm32f4xx_gpio.o(.text) for GPIO_Init
+    dht11.o(.text) refers to delay.o(.text) for delay_ms
+    asrpro.o(.text) refers to uart.o(.text) for UART2_Init
+    mq2.o(.text) refers to stm32f4xx_rcc.o(.text) for RCC_AHB1PeriphClockCmd
+    mq2.o(.text) refers to stm32f4xx_gpio.o(.text) for GPIO_Init
+    mq2.o(.text) refers to stm32f4xx_adc.o(.text) for ADC_CommonInit
+    mq7.o(.text) refers to stm32f4xx_rcc.o(.text) for RCC_AHB1PeriphClockCmd
+    mq7.o(.text) refers to stm32f4xx_gpio.o(.text) for GPIO_Init
+    mq7.o(.text) refers to stm32f4xx_adc.o(.text) for ADC_CommonInit
+    mq135.o(.text) refers to stm32f4xx_rcc.o(.text) for RCC_AHB1PeriphClockCmd
+    mq135.o(.text) refers to stm32f4xx_gpio.o(.text) for GPIO_Init
+    esp8266.o(.text) refers to delay.o(.text) for delay_ms
+    esp8266.o(.text) refers to strstr.o(.text) for strstr
+    esp8266.o(.text) refers to my_lib.o(.text) for MY_LIB_ClearArray
+    esp8266.o(.text) refers to uart.o(.text) for UART3_SendStr
+    esp8266.o(.text) refers to printfa.o(i.__0printf) for __2printf
+    esp8266.o(.text) refers to printfa.o(i.__0sprintf) for __2sprintf
+    esp8266.o(.text) refers to uart.o(.bss) for u3_recvbuf
+    esp8266.o(.text) refers to uart.o(.data) for u3_count
+    esp8266.o(.text) refers to esp8266.o(.data) for .data
+    esp8266_gettime.o(.text) refers to _scanf_str.o(.text) for _scanf_string
+    esp8266_gettime.o(.text) refers to memseta.o(.text) for __aeabi_memclr4
+    esp8266_gettime.o(.text) refers to esp8266.o(.text) for ESP8266_ConnectServer
+    esp8266_gettime.o(.text) refers to printfa.o(i.__0printf) for __2printf
+    esp8266_gettime.o(.text) refers to delay.o(.text) for delay_ms
+    esp8266_gettime.o(.text) refers to strstr.o(.text) for strstr
+    esp8266_gettime.o(.text) refers to __0sscanf.o(.text) for __0sscanf
+    esp8266_gettime.o(.text) refers to my_lib.o(.text) for MY_LIB_ClearArray
+    esp8266_gettime.o(.text) refers to uart.o(.bss) for u3_recvbuf
+    esp8266_gettime.o(.text) refers to uart.o(.data) for u3_count
+    esp8266_getweather.o(.text) refers to memseta.o(.text) for __aeabi_memclr
+    esp8266_getweather.o(.text) refers to strstr.o(.text) for strstr
+    esp8266_getweather.o(.text) refers to strchr.o(.text) for strchr
+    esp8266_getweather.o(.text) refers to strncpy.o(.text) for strncpy
+    esp8266_getweather.o(.text) refers to memmovea.o(.text) for __aeabi_memcpy4
+    esp8266_getweather.o(.text) refers to esp8266.o(.text) for ESP8266_ConnectServer
+    esp8266_getweather.o(.text) refers to printfa.o(i.__0printf) for __2printf
+    esp8266_getweather.o(.text) refers to delay.o(.text) for delay_ms
+    esp8266_getweather.o(.text) refers to printfa.o(i.__0sprintf) for __2sprintf
+    esp8266_getweather.o(.text) refers to strcmp.o(.text) for strcmp
+    esp8266_getweather.o(.text) refers to my_lib.o(.text) for MY_LIB_ClearArray
+    esp8266_getweather.o(.text) refers to esp8266_getweather.o(.constdata) for .constdata
+    esp8266_getweather.o(.text) refers to esp8266_getweather.o(.conststring) for .conststring
+    esp8266_getweather.o(.text) refers to esp8266_getweather.o(.bss) for .bss
+    esp8266_getweather.o(.text) refers to uart.o(.bss) for u3_recvbuf
+    esp8266_getweather.o(.text) refers to uart.o(.data) for u3_count
+    esp8266_getweather.o(.constdata) refers to esp8266_getweather.o(.conststring) for .conststring
+    pir.o(.text) refers to stm32f4xx_rcc.o(.text) for RCC_AHB1PeriphClockCmd
+    pir.o(.text) refers to stm32f4xx_gpio.o(.text) for GPIO_Init
+    esp8266_connect_my_server.o(.text) refers to memseta.o(.text) for __aeabi_memclr4
+    esp8266_connect_my_server.o(.text) refers to esp8266.o(.text) for ESP8266_ConnectServer
+    esp8266_connect_my_server.o(.text) refers to printfa.o(i.__0printf) for __2printf
+    esp8266_connect_my_server.o(.text) refers to delay.o(.text) for delay_ms
+    esp8266_connect_my_server.o(.text) refers to printfa.o(i.__0sprintf) for __2sprintf
+    delay.o(.text) refers to misc.o(.text) for SysTick_CLKSourceConfig
+    delay.o(.text) refers to tasks.o(.text) for vTaskSuspendAll
+    delay.o(.text) refers to delay.o(.data) for .data
+    delay.o(.text) refers to system_stm32f4xx.o(.data) for SystemCoreClock
+    uart.o(.text) refers to stm32f4xx_usart.o(.text) for USART_SendData
+    uart.o(.text) refers to stm32f4xx_rcc.o(.text) for RCC_AHB1PeriphClockCmd
+    uart.o(.text) refers to stm32f4xx_gpio.o(.text) for GPIO_PinAFConfig
+    uart.o(.text) refers to misc.o(.text) for NVIC_Init
+    uart.o(.text) refers to uart.o(.bss) for .bss
+    uart.o(.text) refers to uart.o(.data) for .data
+    stm32f4xx_gpio.o(.text) refers to stm32f4xx_rcc.o(.text) for RCC_AHB1PeriphResetCmd
+    stm32f4xx_rcc.o(.text) refers to stm32f4xx_rcc.o(.data) for .data
+    stm32f4xx_syscfg.o(.text) refers to stm32f4xx_rcc.o(.text) for RCC_APB2PeriphResetCmd
+    stm32f4xx_tim.o(.text) refers to stm32f4xx_rcc.o(.text) for RCC_APB2PeriphResetCmd
+    stm32f4xx_usart.o(.text) refers to stm32f4xx_rcc.o(.text) for RCC_APB2PeriphResetCmd
+    stm32f4xx_spi.o(.text) refers to stm32f4xx_rcc.o(.text) for RCC_APB1PeriphResetCmd
+    stm32f4xx_fsmc.o(.text) refers to stm32f4xx_fsmc.o(.constdata) for .constdata
+    stm32f4xx_pwr.o(.text) refers to stm32f4xx_rcc.o(.text) for RCC_APB1PeriphResetCmd
+    stm32f4xx_adc.o(.text) refers to stm32f4xx_rcc.o(.text) for RCC_APB2PeriphResetCmd
+    startup_stm32f40_41xxx.o(RESET) refers to startup_stm32f40_41xxx.o(STACK) for __initial_sp
+    startup_stm32f40_41xxx.o(RESET) refers to startup_stm32f40_41xxx.o(.text) for Reset_Handler
+    startup_stm32f40_41xxx.o(RESET) refers to stm32f4xx_it.o(.text) for NMI_Handler
+    startup_stm32f40_41xxx.o(RESET) refers to port.o(.emb_text) for SVC_Handler
+    startup_stm32f40_41xxx.o(RESET) refers to port.o(.text) for SysTick_Handler
+    startup_stm32f40_41xxx.o(RESET) refers to exti.o(.text) for EXTI0_IRQHandler
+    startup_stm32f40_41xxx.o(RESET) refers to timer.o(.text) for TIM3_IRQHandler
+    startup_stm32f40_41xxx.o(RESET) refers to uart.o(.text) for USART1_IRQHandler
+    startup_stm32f40_41xxx.o(.text) refers to system_stm32f4xx.o(.text) for SystemInit
+    startup_stm32f40_41xxx.o(.text) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    lv_disp.o(.text) refers to lv_hal_disp.o(.text) for lv_disp_get_default
+    lv_disp.o(.text) refers to lv_obj_pos.o(.text) for lv_obj_set_y
+    lv_disp.o(.text) refers to lv_obj_style_gen.o(.text) for lv_obj_set_style_opa
+    lv_disp.o(.text) refers to lv_obj_tree.o(.text) for lv_obj_get_disp
+    lv_disp.o(.text) refers to lv_event.o(.text) for lv_event_send
+    lv_disp.o(.text) refers to lv_obj_style.o(.text) for lv_obj_remove_local_style_prop
+    lv_disp.o(.text) refers to lv_anim.o(.text) for lv_anim_del
+    lv_disp.o(.text) refers to lv_theme.o(.text) for lv_theme_apply
+    lv_disp.o(.text) refers to lv_area.o(.text) for lv_area_set
+    lv_disp.o(.text) refers to lv_refr.o(.text) for _lv_inv_area
+    lv_disp.o(.text) refers to lv_hal_tick.o(.text) for lv_tick_elaps
+    lv_event.o(.text) refers to lv_indev.o(.text) for lv_indev_get_act
+    lv_event.o(.text) refers to lv_obj.o(.text) for lv_obj_has_flag
+    lv_event.o(.text) refers to lv_mem.o(.text) for lv_mem_realloc
+    lv_event.o(.text) refers to lv_event.o(.data) for .data
+    lv_group.o(.text) refers to lv_ll.o(.text) for _lv_ll_init
+    lv_group.o(.text) refers to lv_indev.o(.text) for lv_indev_get_type
+    lv_group.o(.text) refers to lv_hal_indev.o(.text) for lv_indev_get_next
+    lv_group.o(.text) refers to lv_event.o(.text) for lv_event_send
+    lv_group.o(.text) refers to lv_obj_pos.o(.text) for lv_obj_invalidate
+    lv_group.o(.text) refers to lv_mem.o(.text) for lv_mem_free
+    lv_group.o(.text) refers to lv_obj.o(.text) for lv_obj_get_state
+    lv_group.o(.text) refers to lv_obj_tree.o(.text) for lv_obj_get_parent
+    lv_group.o(.text) refers to lv_gc.o(.bss) for _lv_group_ll
+    lv_group.o(.text) refers to lv_group.o(.data) for .data
+    lv_indev.o(.text) refers to lv_event.o(.text) for lv_event_send
+    lv_indev.o(.text) refers to lv_obj_style.o(.text) for lv_obj_get_style_prop
+    lv_indev.o(.text) refers to lv_obj_tree.o(.text) for lv_obj_get_parent
+    lv_indev.o(.text) refers to lv_area.o(.text) for lv_point_transform
+    lv_indev.o(.text) refers to lv_indev_scroll.o(.text) for _lv_indev_scroll_throw_handler
+    lv_indev.o(.text) refers to lv_obj.o(.text) for lv_obj_has_flag
+    lv_indev.o(.text) refers to lv_group.o(.text) for lv_group_focus_obj
+    lv_indev.o(.text) refers to lv_obj_pos.o(.text) for lv_obj_transform_point
+    lv_indev.o(.text) refers to lv_disp.o(.text) for lv_disp_get_layer_sys
+    lv_indev.o(.text) refers to lv_hal_tick.o(.text) for lv_tick_get
+    lv_indev.o(.text) refers to lv_indev.o(.data) for .data
+    lv_indev.o(.text) refers to lv_obj_class.o(.text) for lv_obj_is_editable
+    lv_indev.o(.text) refers to lv_hal_disp.o(.text) for lv_disp_get_hor_res
+    lv_indev.o(.text) refers to lv_hal_indev.o(.text) for _lv_indev_read
+    lv_indev_scroll.o(.text) refers to lv_obj.o(.text) for lv_obj_has_flag
+    lv_indev_scroll.o(.text) refers to lv_obj_scroll.o(.text) for lv_obj_get_scroll_snap_y
+    lv_indev_scroll.o(.text) refers to lv_indev.o(.text) for lv_indev_get_obj_act
+    lv_indev_scroll.o(.text) refers to lv_obj_tree.o(.text) for lv_obj_get_child_cnt
+    lv_indev_scroll.o(.text) refers to lv_area.o(.text) for lv_area_set
+    lv_indev_scroll.o(.text) refers to lv_event.o(.text) for lv_event_send
+    lv_indev_scroll.o(.text) refers to lv_obj_style.o(.text) for lv_obj_get_style_prop
+    lv_obj.o(.text) refers to lv_mem.o(.text) for lv_mem_init
+    lv_obj.o(.text) refers to lv_timer.o(.text) for _lv_timer_core_init
+    lv_obj.o(.text) refers to lv_fs.o(.text) for _lv_fs_init
+    lv_obj.o(.text) refers to lv_anim.o(.text) for _lv_anim_core_init
+    lv_obj.o(.text) refers to lv_group.o(.text) for _lv_group_init
+    lv_obj.o(.text) refers to lv_draw.o(.text) for lv_draw_init
+    lv_obj.o(.text) refers to lv_obj_style.o(.text) for _lv_obj_style_init
+    lv_obj.o(.text) refers to lv_ll.o(.text) for _lv_ll_init
+    lv_obj.o(.text) refers to lv_refr.o(.text) for _lv_refr_init
+    lv_obj.o(.text) refers to lv_img_decoder.o(.text) for _lv_img_decoder_init
+    lv_obj.o(.text) refers to lv_extra.o(.text) for lv_extra_init
+    lv_obj.o(.text) refers to lv_gc.o(.text) for _lv_gc_clear_roots
+    lv_obj.o(.text) refers to lv_hal_disp.o(.text) for lv_disp_set_default
+    lv_obj.o(.text) refers to lv_obj_class.o(.text) for lv_obj_class_create_obj
+    lv_obj.o(.text) refers to lv_obj_pos.o(.text) for lv_obj_is_layout_positioned
+    lv_obj.o(.text) refers to lv_obj_tree.o(.text) for lv_obj_get_parent
+    lv_obj.o(.text) refers to lv_obj_scroll.o(.text) for lv_obj_get_scrollbar_area
+    lv_obj.o(.text) refers to lv_obj_draw.o(.text) for lv_obj_refresh_ext_draw_size
+    lv_obj.o(.text) refers to lv_obj.o(.data) for .data
+    lv_obj.o(.text) refers to lv_gc.o(.bss) for _lv_disp_ll
+    lv_obj.o(.text) refers to lv_obj.o(.constdata) for .constdata
+    lv_obj.o(.text) refers to lv_event.o(.text) for _lv_event_mark_deleted
+    lv_obj.o(.text) refers to lv_draw_rect.o(.text) for lv_draw_rect_dsc_init
+    lv_obj.o(.text) refers to lv_draw_mask.o(.text) for lv_draw_mask_remove_custom
+    lv_obj.o(.text) refers to lv_area.o(.text) for _lv_area_is_in
+    lv_obj.o(.text) refers to lv_indev.o(.text) for lv_indev_get_scroll_obj
+    lv_obj.o(.text) refers to lv_style.o(.text) for lv_style_prop_get_default
+    lv_obj.o(.constdata) refers to lv_obj.o(.text) for lv_obj_constructor
+    lv_obj_class.o(.text) refers to lv_mem.o(.text) for lv_mem_alloc
+    lv_obj_class.o(.text) refers to lv_hal_disp.o(.text) for lv_disp_get_default
+    lv_obj_class.o(.text) refers to lv_obj.o(.text) for lv_obj_allocate_spec_attr
+    lv_obj_class.o(.text) refers to lv_obj_pos.o(.text) for lv_obj_mark_layout_as_dirty
+    lv_obj_class.o(.text) refers to lv_obj_style.o(.text) for lv_obj_enable_style_refresh
+    lv_obj_class.o(.text) refers to lv_theme.o(.text) for lv_theme_apply
+    lv_obj_class.o(.text) refers to lv_group.o(.text) for lv_group_get_default
+    lv_obj_class.o(.text) refers to lv_obj_tree.o(.text) for lv_obj_get_parent
+    lv_obj_class.o(.text) refers to lv_event.o(.text) for lv_event_send
+    lv_obj_draw.o(.text) refers to lv_obj_style.o(.text) for lv_obj_get_style_opa_recursive
+    lv_obj_draw.o(.text) refers to lv_mem.o(.text) for lv_memcpy
+    lv_obj_draw.o(.text) refers to lv_draw_img.o(.text) for lv_img_src_get_type
+    lv_obj_draw.o(.text) refers to lv_event.o(.text) for lv_event_send
+    lv_obj_draw.o(.text) refers to lv_obj_pos.o(.text) for lv_obj_invalidate
+    lv_obj_draw.o(.text) refers to lv_obj.o(.text) for lv_obj_allocate_spec_attr
+    lv_obj_pos.o(.text) refers to lv_obj_style.o(.text) for lv_obj_get_local_style_prop
+    lv_obj_pos.o(.text) refers to lv_obj_style_gen.o(.text) for lv_obj_set_style_y
+    lv_obj_pos.o(.text) refers to lv_area.o(.text) for lv_point_transform
+    lv_obj_pos.o(.text) refers to lv_obj_draw.o(.text) for _lv_obj_get_layer_type
+    lv_obj_pos.o(.text) refers to lv_obj_tree.o(.text) for lv_obj_get_parent
+    lv_obj_pos.o(.text) refers to lv_obj.o(.text) for lv_obj_has_flag
+    lv_obj_pos.o(.text) refers to lv_disp.o(.text) for lv_disp_get_scr_act
+    lv_obj_pos.o(.text) refers to lv_refr.o(.text) for _lv_inv_area
+    lv_obj_pos.o(.text) refers to lv_event.o(.text) for lv_event_send
+    lv_obj_pos.o(.text) refers to lv_obj_scroll.o(.text) for lv_obj_scroll_to_y
+    lv_obj_pos.o(.text) refers to lv_obj_pos.o(.constdata) for .constdata
+    lv_obj_pos.o(.text) refers to lv_timer.o(.text) for lv_timer_resume
+    lv_obj_pos.o(.text) refers to lv_mem.o(.text) for lv_mem_realloc
+    lv_obj_pos.o(.text) refers to lv_obj_pos.o(.data) for .data
+    lv_obj_pos.o(.text) refers to lv_gc.o(.data) for _lv_layout_list
+    lv_obj_scroll.o(.text) refers to lv_obj.o(.text) for lv_obj_allocate_spec_attr
+    lv_obj_scroll.o(.text) refers to lv_obj_pos.o(.text) for lv_obj_invalidate
+    lv_obj_scroll.o(.text) refers to lv_obj_tree.o(.text) for lv_obj_get_child_cnt
+    lv_obj_scroll.o(.text) refers to lv_event.o(.text) for lv_event_send
+    lv_obj_scroll.o(.text) refers to lv_anim.o(.text) for lv_anim_get
+    lv_obj_scroll.o(.text) refers to lv_hal_disp.o(.text) for lv_disp_get_hor_res
+    lv_obj_scroll.o(.text) refers to lv_indev.o(.text) for lv_indev_get_scroll_obj
+    lv_obj_scroll.o(.text) refers to lv_hal_indev.o(.text) for lv_indev_get_next
+    lv_obj_scroll.o(.text) refers to lv_indev_scroll.o(.text) for lv_indev_scroll_get_snap_dist
+    lv_obj_scroll.o(.text) refers to lv_area.o(.text) for lv_area_set
+    lv_obj_scroll.o(.text) refers to lv_obj_style.o(.text) for lv_obj_get_style_prop
+    lv_obj_style.o(.text) refers to lv_style.o(.text) for _lv_style_get_prop_group
+    lv_obj_style.o(.text) refers to lv_obj_tree.o(.text) for lv_obj_get_parent
+    lv_obj_style.o(.text) refers to lv_ll.o(.text) for _lv_ll_init
+    lv_obj_style.o(.text) refers to lv_obj_pos.o(.text) for lv_obj_invalidate
+    lv_obj_style.o(.text) refers to lv_event.o(.text) for lv_event_send
+    lv_obj_style.o(.text) refers to lv_obj.o(.text) for lv_obj_allocate_spec_attr
+    lv_obj_style.o(.text) refers to lv_obj_draw.o(.text) for lv_obj_refresh_ext_draw_size
+    lv_obj_style.o(.text) refers to lv_anim.o(.text) for lv_anim_del
+    lv_obj_style.o(.text) refers to lv_mem.o(.text) for lv_mem_free
+    lv_obj_style.o(.text) refers to lv_gc.o(.bss) for _lv_obj_style_trans_ll
+    lv_obj_style.o(.text) refers to lv_obj_style.o(.data) for .data
+    lv_obj_style.o(.text) refers to lv_hal_disp.o(.text) for lv_disp_get_next
+    lv_obj_style.o(.text) refers to lv_obj_style_gen.o(.text) for lv_obj_set_style_opa
+    lv_obj_style_gen.o(.text) refers to lv_obj_style.o(.text) for lv_obj_set_local_style_prop
+    lv_obj_tree.o(.text) refers to lv_ll.o(.text) for _lv_ll_get_head
+    lv_obj_tree.o(.text) refers to lv_event.o(.text) for lv_event_send
+    lv_obj_tree.o(.text) refers to lv_obj.o(.text) for lv_obj_get_group
+    lv_obj_tree.o(.text) refers to lv_hal_indev.o(.text) for lv_indev_get_next
+    lv_obj_tree.o(.text) refers to lv_indev.o(.text) for lv_indev_reset
+    lv_obj_tree.o(.text) refers to lv_obj_class.o(.text) for _lv_obj_destruct
+    lv_obj_tree.o(.text) refers to lv_mem.o(.text) for lv_mem_realloc
+    lv_obj_tree.o(.text) refers to lv_obj_pos.o(.text) for lv_obj_invalidate
+    lv_obj_tree.o(.text) refers to lv_obj_scroll.o(.text) for lv_obj_scrollbar_invalidate
+    lv_obj_tree.o(.text) refers to lv_anim.o(.text) for lv_anim_init
+    lv_obj_tree.o(.text) refers to lv_async.o(.text) for lv_async_call
+    lv_obj_tree.o(.text) refers to lv_gc.o(.bss) for _lv_disp_ll
+    lv_obj_tree.o(.text) refers to lv_group.o(.text) for lv_group_swap_obj
+    lv_obj_tree.o(.text) refers to lv_hal_disp.o(.text) for lv_disp_get_next
+    lv_refr.o(.text) refers to lv_hal_disp.o(.text) for lv_disp_get_draw_buf
+    lv_refr.o(.text) refers to lv_mem.o(.text) for lv_mem_buf_get
+    lv_refr.o(.text) refers to lv_obj_pos.o(.text) for lv_obj_get_coords
+    lv_refr.o(.text) refers to lv_obj_draw.o(.text) for _lv_obj_get_ext_draw_size
+    lv_refr.o(.text) refers to lv_area.o(.text) for lv_area_increase
+    lv_refr.o(.text) refers to lv_obj.o(.text) for lv_obj_has_flag
+    lv_refr.o(.text) refers to lv_event.o(.text) for lv_event_send
+    lv_refr.o(.text) refers to lv_obj_tree.o(.text) for lv_obj_get_child_cnt
+    lv_refr.o(.text) refers to lv_refr.o(.bss) for .bss
+    lv_refr.o(.text) refers to lv_refr.o(.data) for .data
+    lv_refr.o(.text) refers to lv_obj_style.o(.text) for lv_obj_get_style_prop
+    lv_refr.o(.text) refers to lv_draw_layer.o(.text) for lv_draw_layer_create
+    lv_refr.o(.text) refers to lv_draw_img.o(.text) for lv_draw_img_dsc_init
+    lv_refr.o(.text) refers to lv_disp.o(.text) for lv_disp_get_scr_act
+    lv_refr.o(.text) refers to lv_draw_rect.o(.text) for lv_draw_rect_dsc_init
+    lv_refr.o(.text) refers to lv_img_decoder.o(.text) for lv_img_decoder_get_info
+    lv_refr.o(.text) refers to lv_ll.o(.text) for _lv_ll_is_empty
+    lv_refr.o(.text) refers to memseta.o(.text) for __aeabi_memclr4
+    lv_refr.o(.text) refers to lv_hal_tick.o(.text) for lv_tick_get
+    lv_refr.o(.text) refers to lv_font_fmt_txt.o(.text) for _lv_font_clean_up_fmt_txt
+    lv_refr.o(.text) refers to lv_draw_mask.o(.text) for _lv_draw_mask_cleanup
+    lv_refr.o(.text) refers to lv_label.o(.text) for lv_label_create
+    lv_refr.o(.text) refers to lv_obj_style_gen.o(.text) for lv_obj_set_style_bg_opa
+    lv_refr.o(.text) refers to lv_timer.o(.text) for lv_timer_get_idle
+    lv_refr.o(.text) refers to lv_anim.o(.text) for lv_anim_refr_now
+    lv_theme.o(.text) refers to lv_obj_tree.o(.text) for lv_obj_get_disp
+    lv_theme.o(.text) refers to lv_hal_disp.o(.text) for lv_disp_get_default
+    lv_theme.o(.text) refers to lv_disp.o(.text) for lv_disp_get_theme
+    lv_theme.o(.text) refers to lv_obj_style.o(.text) for lv_obj_remove_style
+    lv_theme.o(.text) refers to lv_color.o(.text) for lv_palette_main
+    lv_theme.o(.text) refers to lv_font_montserrat_14.o(.constdata) for lv_font_montserrat_14
+    lv_draw_arc.o(.text) refers to lv_mem.o(.text) for lv_memset_00
+    lv_draw_arc.o(.text) refers to lv_math.o(.text) for lv_trigo_sin
+    lv_draw_img.o(.text) refers to lv_mem.o(.text) for lv_memset_00
+    lv_draw_img.o(.text) refers to lv_draw_rect.o(.text) for lv_draw_rect_dsc_init
+    lv_draw_img.o(.text) refers to lv_draw_label.o(.text) for lv_draw_label_dsc_init
+    lv_draw_img.o(.text) refers to lv_img_cache.o(.text) for _lv_img_cache_open
+    lv_draw_img.o(.text) refers to lv_img_buf.o(.text) for _lv_img_buf_get_transformed_area
+    lv_draw_img.o(.text) refers to lv_area.o(.text) for _lv_area_intersect
+    lv_draw_img.o(.text) refers to lv_img_decoder.o(.text) for lv_img_decoder_read_line
+    lv_draw_label.o(.text) refers to lv_mem.o(.text) for lv_memset_00
+    lv_draw_label.o(.text) refers to lv_color.o(.text) for lv_palette_main
+    lv_draw_label.o(.text) refers to memmovea.o(.text) for __aeabi_memcpy4
+    lv_draw_label.o(.text) refers to lv_area.o(.text) for _lv_area_intersect
+    lv_draw_label.o(.text) refers to lv_txt.o(.text) for lv_txt_get_size
+    lv_draw_label.o(.text) refers to lv_draw_line.o(.text) for lv_draw_line_dsc_init
+    lv_draw_label.o(.text) refers to lv_draw_rect.o(.text) for lv_draw_rect_dsc_init
+    lv_draw_label.o(.text) refers to lv_font.o(.text) for lv_font_get_glyph_width
+    lv_draw_label.o(.text) refers to lv_font_montserrat_14.o(.constdata) for lv_font_montserrat_14
+    lv_draw_label.o(.text) refers to lv_txt.o(.data) for _lv_txt_encoded_get_char_id
+    lv_draw_layer.o(.text) refers to lv_mem.o(.text) for lv_mem_alloc
+    lv_draw_layer.o(.text) refers to lv_refr.o(.text) for _lv_refr_get_disp_refreshing
+    lv_draw_layer.o(.text) refers to lv_draw.o(.text) for lv_draw_wait_for_finish
+    lv_draw_line.o(.text) refers to lv_mem.o(.text) for lv_memset_00
+    lv_draw_mask.o(.text) refers to lv_mem.o(.text) for lv_mem_free
+    lv_draw_mask.o(.text) refers to lv_area.o(.text) for _lv_area_is_out
+    lv_draw_mask.o(.text) refers to lv_gc.o(.bss) for _lv_draw_mask_list
+    lv_draw_mask.o(.text) refers to lv_math.o(.text) for lv_trigo_sin
+    lv_draw_rect.o(.text) refers to lv_mem.o(.text) for lv_memset_00
+    lv_draw_rect.o(.text) refers to lv_font_montserrat_14.o(.constdata) for lv_font_montserrat_14
+    lv_img_buf.o(.text) refers to lv_draw_img.o(.text) for lv_img_cf_get_px_size
+    lv_img_buf.o(.text) refers to lv_mem.o(.text) for lv_mem_alloc
+    lv_img_buf.o(.text) refers to lv_area.o(.text) for lv_point_transform
+    lv_img_cache.o(.text) refers to lv_hal_tick.o(.text) for lv_tick_get
+    lv_img_cache.o(.text) refers to lv_img_decoder.o(.text) for lv_img_decoder_open
+    lv_img_cache.o(.text) refers to lv_mem.o(.text) for lv_memset_00
+    lv_img_cache.o(.text) refers to lv_gc.o(.bss) for _lv_img_cache_single
+    lv_img_decoder.o(.text) refers to lv_fs.o(.text) for lv_fs_close
+    lv_img_decoder.o(.text) refers to lv_mem.o(.text) for lv_mem_free
+    lv_img_decoder.o(.text) refers to lv_draw_img.o(.text) for lv_img_cf_get_px_size
+    lv_img_decoder.o(.text) refers to strcmp.o(.text) for strcmp
+    lv_img_decoder.o(.text) refers to lv_ll.o(.text) for _lv_ll_ins_head
+    lv_img_decoder.o(.text) refers to strlen.o(.text) for strlen
+    lv_img_decoder.o(.text) refers to strcpy.o(.text) for strcpy
+    lv_img_decoder.o(.text) refers to lv_gc.o(.bss) for _lv_img_decoder_ll
+    lv_draw_sw.o(.text) refers to lv_mem.o(.text) for lv_memcpy
+    lv_draw_sw.o(.text) refers to lv_draw_sw_arc.o(.text) for lv_draw_sw_arc
+    lv_draw_sw.o(.text) refers to lv_draw_sw_rect.o(.text) for lv_draw_sw_rect
+    lv_draw_sw.o(.text) refers to lv_draw_sw_letter.o(.text) for lv_draw_sw_letter
+    lv_draw_sw.o(.text) refers to lv_draw_sw_img.o(.text) for lv_draw_sw_img_decoded
+    lv_draw_sw.o(.text) refers to lv_draw_sw_line.o(.text) for lv_draw_sw_line
+    lv_draw_sw.o(.text) refers to lv_draw_sw_polygon.o(.text) for lv_draw_sw_polygon
+    lv_draw_sw.o(.text) refers to lv_draw_sw_transform.o(.text) for lv_draw_sw_transform
+    lv_draw_sw.o(.text) refers to lv_draw_sw_layer.o(.text) for lv_draw_sw_layer_create
+    lv_draw_sw.o(.text) refers to lv_draw_sw_blend.o(.text) for lv_draw_sw_blend_basic
+    lv_draw_sw_arc.o(.text) refers to lv_math.o(.text) for lv_trigo_sin
+    lv_draw_sw_arc.o(.text) refers to lv_area.o(.text) for _lv_area_intersect
+    lv_draw_sw_arc.o(.text) refers to lv_draw_rect.o(.text) for lv_draw_rect
+    lv_draw_sw_arc.o(.text) refers to lv_draw_mask.o(.text) for lv_draw_mask_radius_init
+    lv_draw_sw_blend.o(.text) refers to lv_area.o(.text) for _lv_area_intersect
+    lv_draw_sw_blend.o(.text) refers to lv_mem.o(.text) for lv_memcpy
+    lv_draw_sw_blend.o(.text) refers to lv_color.o(.text) for lv_color_fill
+    lv_draw_sw_blend.o(.text) refers to lv_refr.o(.text) for _lv_refr_get_disp_refreshing
+    lv_draw_sw_gradient.o(.text) refers to lv_mem.o(.text) for lv_memcpy
+    lv_draw_sw_gradient.o(.text) refers to lv_draw_sw_gradient.o(.data) for .data
+    lv_draw_sw_gradient.o(.text) refers to lv_gc.o(.data) for _lv_grad_cache_mem
+    lv_draw_sw_img.o(.text) refers to lv_area.o(.text) for lv_area_get_size
+    lv_draw_sw_img.o(.text) refers to lv_mem.o(.text) for lv_memset_ff
+    lv_draw_sw_img.o(.text) refers to lv_draw_mask.o(.text) for lv_draw_mask_is_any
+    lv_draw_sw_img.o(.text) refers to lv_draw_sw_blend.o(.text) for lv_draw_sw_blend
+    lv_draw_sw_img.o(.text) refers to lv_refr.o(.text) for _lv_refr_get_disp_refreshing
+    lv_draw_sw_img.o(.text) refers to lv_hal_disp.o(.text) for lv_disp_get_hor_res
+    lv_draw_sw_img.o(.text) refers to lv_draw_transform.o(.text) for lv_draw_transform
+    lv_draw_sw_layer.o(.text) refers to lv_area.o(.text) for lv_area_get_size
+    lv_draw_sw_layer.o(.text) refers to lv_mem.o(.text) for lv_mem_alloc
+    lv_draw_sw_layer.o(.text) refers to lv_refr.o(.text) for _lv_refr_get_disp_refreshing
+    lv_draw_sw_layer.o(.text) refers to lv_draw_img.o(.text) for lv_draw_img
+    lv_draw_sw_layer.o(.text) refers to lv_draw.o(.text) for lv_draw_wait_for_finish
+    lv_draw_sw_layer.o(.text) refers to lv_img_cache.o(.text) for lv_img_cache_invalidate_src
+    lv_draw_sw_letter.o(.text) refers to lv_mem.o(.text) for lv_memset_00
+    lv_draw_sw_letter.o(.text) refers to lv_refr.o(.text) for _lv_refr_get_disp_refreshing
+    lv_draw_sw_letter.o(.text) refers to lv_hal_disp.o(.text) for lv_disp_get_hor_res
+    lv_draw_sw_letter.o(.text) refers to lv_draw_mask.o(.text) for lv_draw_mask_is_any
+    lv_draw_sw_letter.o(.text) refers to lv_draw_sw_blend.o(.text) for lv_draw_sw_blend
+    lv_draw_sw_letter.o(.text) refers to lv_font.o(.text) for lv_font_get_glyph_dsc
+    lv_draw_sw_letter.o(.text) refers to lv_area.o(.text) for lv_area_set
+    lv_draw_sw_letter.o(.text) refers to lv_draw_rect.o(.text) for lv_draw_rect_dsc_init
+    lv_draw_sw_letter.o(.text) refers to lv_draw_sw_letter.o(.constdata) for .constdata
+    lv_draw_sw_letter.o(.text) refers to lv_draw_sw_letter.o(.data) for .data
+    lv_draw_sw_letter.o(.text) refers to lv_draw_sw_letter.o(.bss) for .bss
+    lv_draw_sw_line.o(.text) refers to lv_area.o(.text) for _lv_area_intersect
+    lv_draw_sw_line.o(.text) refers to lv_draw_mask.o(.text) for lv_draw_mask_line_points_init
+    lv_draw_sw_line.o(.text) refers to lv_refr.o(.text) for _lv_refr_get_disp_refreshing
+    lv_draw_sw_line.o(.text) refers to lv_hal_disp.o(.text) for lv_disp_get_hor_res
+    lv_draw_sw_line.o(.text) refers to lv_mem.o(.text) for lv_mem_buf_get
+    lv_draw_sw_line.o(.text) refers to lv_draw_sw_blend.o(.text) for lv_draw_sw_blend
+    lv_draw_sw_line.o(.text) refers to lv_draw_sw_line.o(.constdata) for .constdata
+    lv_draw_sw_line.o(.text) refers to lv_draw_rect.o(.text) for lv_draw_rect_dsc_init
+    lv_draw_sw_polygon.o(.text) refers to lv_mem.o(.text) for lv_mem_buf_get
+    lv_draw_sw_polygon.o(.text) refers to lv_area.o(.text) for _lv_area_intersect
+    lv_draw_sw_polygon.o(.text) refers to lv_draw_mask.o(.text) for lv_draw_mask_line_points_init
+    lv_draw_sw_polygon.o(.text) refers to lv_draw_rect.o(.text) for lv_draw_rect
+    lv_draw_sw_polygon.o(.text) refers to lv_draw_sw_polygon.o(.constdata) for .constdata
+    lv_draw_sw_rect.o(.text) refers to lv_mem.o(.text) for lv_memset_00
+    lv_draw_sw_rect.o(.text) refers to lv_draw_sw_blend.o(.text) for lv_draw_sw_blend
+    lv_draw_sw_rect.o(.text) refers to lv_draw_mask.o(.text) for lv_draw_mask_is_any
+    lv_draw_sw_rect.o(.text) refers to lv_area.o(.text) for _lv_area_intersect
+    lv_draw_sw_rect.o(.text) refers to lv_draw_img.o(.text) for lv_img_src_get_type
+    lv_draw_sw_rect.o(.text) refers to lv_img_decoder.o(.text) for lv_img_decoder_get_info
+    lv_draw_sw_rect.o(.text) refers to lv_txt.o(.text) for lv_txt_get_size
+    lv_draw_sw_rect.o(.text) refers to lv_draw_label.o(.text) for lv_draw_label_dsc_init
+    lv_draw_sw_rect.o(.text) refers to memseta.o(.text) for __aeabi_memclr4
+    lv_draw_sw_rect.o(.text) refers to lv_draw_sw_gradient.o(.text) for lv_gradient_get
+    lv_draw_sw_transform.o(.text) refers to lv_refr.o(.text) for _lv_refr_get_disp_refreshing
+    lv_draw_sw_transform.o(.text) refers to lv_math.o(.text) for lv_trigo_sin
+    lv_draw_sw_transform.o(.text) refers to lv_mem.o(.text) for lv_memset_ff
+    lv_extra.o(.text) refers to lv_flex.o(.text) for lv_flex_init
+    lv_extra.o(.text) refers to lv_grid.o(.text) for lv_grid_init
+    lv_flex.o(.text) refers to lv_obj_pos.o(.text) for lv_obj_get_content_width
+    lv_flex.o(.text) refers to lv_obj_tree.o(.text) for lv_obj_get_child
+    lv_flex.o(.text) refers to lv_obj.o(.text) for lv_obj_has_flag_any
+    lv_flex.o(.text) refers to lv_event.o(.text) for lv_event_send
+    lv_flex.o(.text) refers to lv_obj_style.o(.text) for lv_obj_get_style_prop
+    lv_flex.o(.text) refers to lv_area.o(.text) for lv_area_set_width
+    lv_flex.o(.text) refers to lv_mem.o(.text) for lv_mem_buf_get
+    lv_flex.o(.text) refers to lv_obj_scroll.o(.text) for lv_obj_get_scroll_y
+    lv_flex.o(.text) refers to lv_flex.o(.data) for .data
+    lv_flex.o(.text) refers to lv_style.o(.text) for lv_style_register_prop
+    lv_flex.o(.text) refers to lv_obj_style_gen.o(.text) for lv_obj_set_style_layout
+    lv_grid.o(.text) refers to lv_obj.o(.text) for lv_obj_has_flag_any
+    lv_grid.o(.text) refers to lv_obj_style.o(.text) for lv_obj_get_style_prop
+    lv_grid.o(.text) refers to lv_obj_pos.o(.text) for lv_obj_get_width
+    lv_grid.o(.text) refers to lv_area.o(.text) for lv_area_set_width
+    lv_grid.o(.text) refers to lv_event.o(.text) for lv_event_send
+    lv_grid.o(.text) refers to lv_obj_tree.o(.text) for lv_obj_get_parent
+    lv_grid.o(.text) refers to lv_mem.o(.text) for lv_mem_buf_get
+    lv_grid.o(.text) refers to lv_grid.o(.data) for .data
+    lv_grid.o(.text) refers to lv_obj_scroll.o(.text) for lv_obj_get_scroll_x
+    lv_grid.o(.text) refers to lv_style.o(.text) for lv_style_register_prop
+    lv_grid.o(.text) refers to lv_obj_style_gen.o(.text) for lv_obj_set_style_layout
+    qrcodegen.o(.text) refers to qrcodegen.o(.constdata) for .constdata
+    qrcodegen.o(.text) refers to memseta.o(.text) for __aeabi_memclr
+    qrcodegen.o(.text) refers to memmovea.o(.text) for __aeabi_memmove
+    qrcodegen.o(.text) refers to strlen.o(.text) for strlen
+    qrcodegen.o(.text) refers to strchr.o(.text) for strchr
+    qrcodegen.o(.text) refers to qrcodegen.o(.data) for .data
+    qrcodegen.o(.data) refers to qrcodegen.o(.conststring) for .conststring
+    lv_theme_basic.o(.text) refers to lv_style_gen.o(.text) for lv_style_set_bg_opa
+    lv_theme_basic.o(.text) refers to lv_color.o(.text) for lv_palette_main
+    lv_theme_basic.o(.text) refers to lv_obj_tree.o(.text) for lv_obj_get_parent
+    lv_theme_basic.o(.text) refers to lv_obj.o(.text) for lv_obj_check_type
+    lv_theme_basic.o(.text) refers to lv_obj_style.o(.text) for lv_obj_add_style
+    lv_theme_basic.o(.text) refers to lv_theme_basic.o(.data) for .data
+    lv_theme_basic.o(.text) refers to lv_gc.o(.data) for _lv_theme_basic_styles
+    lv_theme_basic.o(.text) refers to lv_obj.o(.constdata) for lv_obj_class
+    lv_theme_basic.o(.text) refers to lv_tabview.o(.constdata) for lv_tabview_class
+    lv_theme_basic.o(.text) refers to lv_win.o(.constdata) for lv_win_class
+    lv_theme_basic.o(.text) refers to lv_btn.o(.constdata) for lv_btn_class
+    lv_theme_basic.o(.text) refers to lv_btnmatrix.o(.constdata) for lv_btnmatrix_class
+    lv_theme_basic.o(.text) refers to lv_msgbox.o(.constdata) for lv_msgbox_class
+    lv_theme_basic.o(.text) refers to lv_bar.o(.constdata) for lv_bar_class
+    lv_theme_basic.o(.text) refers to lv_slider.o(.constdata) for lv_slider_class
+    lv_theme_basic.o(.text) refers to lv_table.o(.constdata) for lv_table_class
+    lv_theme_basic.o(.text) refers to lv_checkbox.o(.constdata) for lv_checkbox_class
+    lv_theme_basic.o(.text) refers to lv_switch.o(.constdata) for lv_switch_class
+    lv_theme_basic.o(.text) refers to lv_mem.o(.text) for lv_mem_alloc
+    lv_theme_basic.o(.text) refers to lv_disp.o(.text) for lv_disp_get_theme
+    lv_theme_basic.o(.text) refers to lv_style.o(.text) for lv_style_reset
+    lv_theme_basic.o(.text) refers to lv_chart.o(.constdata) for lv_chart_class
+    lv_theme_basic.o(.text) refers to lv_roller.o(.constdata) for lv_roller_class
+    lv_theme_basic.o(.text) refers to lv_dropdown.o(.constdata) for lv_dropdown_class
+    lv_theme_basic.o(.text) refers to lv_arc.o(.constdata) for lv_arc_class
+    lv_theme_basic.o(.text) refers to lv_spinner.o(.constdata) for lv_spinner_class
+    lv_theme_basic.o(.text) refers to lv_colorwheel.o(.constdata) for lv_colorwheel_class
+    lv_theme_basic.o(.text) refers to lv_meter.o(.constdata) for lv_meter_class
+    lv_theme_basic.o(.text) refers to lv_textarea.o(.constdata) for lv_textarea_class
+    lv_theme_basic.o(.text) refers to lv_calendar.o(.constdata) for lv_calendar_class
+    lv_theme_basic.o(.text) refers to lv_keyboard.o(.constdata) for lv_keyboard_class
+    lv_theme_basic.o(.text) refers to lv_list.o(.constdata) for lv_list_class
+    lv_theme_basic.o(.text) refers to lv_spinbox.o(.constdata) for lv_spinbox_class
+    lv_theme_basic.o(.text) refers to lv_tileview.o(.constdata) for lv_tileview_class
+    lv_theme_basic.o(.text) refers to lv_led.o(.constdata) for lv_led_class
+    lv_theme_basic.o(.text) refers to lv_theme_basic.o(.bss) for .bss
+    lv_theme_basic.o(.text) refers to lv_font_montserrat_14.o(.constdata) for lv_font_montserrat_14
+    lv_theme_default.o(.text) refers to lv_hal_disp.o(.text) for lv_disp_get_dpi
+    lv_theme_default.o(.text) refers to lv_color.o(.text) for lv_color_darken
+    lv_theme_default.o(.text) refers to lv_style.o(.text) for lv_style_transition_dsc_init
+    lv_theme_default.o(.text) refers to lv_style_gen.o(.text) for lv_style_set_transition
+    lv_theme_default.o(.text) refers to lv_theme_default.o(.bss) for .bss
+    lv_theme_default.o(.text) refers to lv_theme_default.o(.data) for .data
+    lv_theme_default.o(.text) refers to lv_anim.o(.text) for lv_anim_path_linear
+    lv_theme_default.o(.text) refers to lv_theme_default.o(.constdata) for .constdata
+    lv_theme_default.o(.text) refers to lv_obj_tree.o(.text) for lv_obj_get_parent
+    lv_theme_default.o(.text) refers to lv_obj.o(.text) for lv_obj_check_type
+    lv_theme_default.o(.text) refers to lv_obj_style.o(.text) for lv_obj_add_style
+    lv_theme_default.o(.text) refers to lv_obj.o(.constdata) for lv_obj_class
+    lv_theme_default.o(.text) refers to lv_tabview.o(.constdata) for lv_tabview_class
+    lv_theme_default.o(.text) refers to lv_win.o(.constdata) for lv_win_class
+    lv_theme_default.o(.text) refers to lv_calendar.o(.constdata) for lv_calendar_class
+    lv_theme_default.o(.text) refers to lv_btn.o(.constdata) for lv_btn_class
+    lv_theme_default.o(.text) refers to lv_menu.o(.constdata) for lv_menu_sidebar_header_cont_class
+    lv_theme_default.o(.text) refers to lv_line.o(.constdata) for lv_line_class
+    lv_theme_default.o(.text) refers to lv_btnmatrix.o(.constdata) for lv_btnmatrix_class
+    lv_theme_default.o(.text) refers to lv_msgbox.o(.constdata) for lv_msgbox_class
+    lv_theme_default.o(.text) refers to lv_bar.o(.constdata) for lv_bar_class
+    lv_theme_default.o(.text) refers to lv_slider.o(.constdata) for lv_slider_class
+    lv_theme_default.o(.text) refers to lv_table.o(.constdata) for lv_table_class
+    lv_theme_default.o(.text) refers to lv_checkbox.o(.constdata) for lv_checkbox_class
+    lv_theme_default.o(.text) refers to lv_switch.o(.constdata) for lv_switch_class
+    lv_theme_default.o(.text) refers to lv_chart.o(.constdata) for lv_chart_class
+    lv_theme_default.o(.text) refers to lv_roller.o(.constdata) for lv_roller_class
+    lv_theme_default.o(.text) refers to lv_dropdown.o(.constdata) for lv_dropdown_class
+    lv_theme_default.o(.text) refers to lv_arc.o(.constdata) for lv_arc_class
+    lv_theme_default.o(.text) refers to lv_spinner.o(.constdata) for lv_spinner_class
+    lv_theme_default.o(.text) refers to lv_meter.o(.constdata) for lv_meter_class
+    lv_theme_default.o(.text) refers to lv_textarea.o(.constdata) for lv_textarea_class
+    lv_theme_default.o(.text) refers to lv_calendar_header_arrow.o(.constdata) for lv_calendar_header_arrow_class
+    lv_theme_default.o(.text) refers to lv_calendar_header_dropdown.o(.constdata) for lv_calendar_header_dropdown_class
+    lv_theme_default.o(.text) refers to lv_keyboard.o(.constdata) for lv_keyboard_class
+    lv_theme_default.o(.text) refers to lv_list.o(.constdata) for lv_list_class
+    lv_theme_default.o(.text) refers to lv_spinbox.o(.constdata) for lv_spinbox_class
+    lv_theme_default.o(.text) refers to lv_tileview.o(.constdata) for lv_tileview_class
+    lv_theme_default.o(.text) refers to lv_mem.o(.text) for lv_mem_alloc
+    lv_theme_default.o(.text) refers to lv_disp.o(.text) for lv_disp_get_theme
+    lv_theme_default.o(.text) refers to lv_colorwheel.o(.constdata) for lv_colorwheel_class
+    lv_theme_default.o(.text) refers to lv_led.o(.constdata) for lv_led_class
+    lv_theme_default.o(.text) refers to lv_gc.o(.data) for _lv_theme_default_styles
+    lv_theme_mono.o(.text) refers to lv_style_gen.o(.text) for lv_style_set_bg_opa
+    lv_theme_mono.o(.text) refers to lv_obj_tree.o(.text) for lv_obj_get_parent
+    lv_theme_mono.o(.text) refers to lv_obj.o(.text) for lv_obj_check_type
+    lv_theme_mono.o(.text) refers to lv_obj_style.o(.text) for lv_obj_add_style
+    lv_theme_mono.o(.text) refers to lv_theme_mono.o(.data) for .data
+    lv_theme_mono.o(.text) refers to lv_gc.o(.data) for _lv_theme_default_styles
+    lv_theme_mono.o(.text) refers to lv_obj.o(.constdata) for lv_obj_class
+    lv_theme_mono.o(.text) refers to lv_tabview.o(.constdata) for lv_tabview_class
+    lv_theme_mono.o(.text) refers to lv_win.o(.constdata) for lv_win_class
+    lv_theme_mono.o(.text) refers to lv_btn.o(.constdata) for lv_btn_class
+    lv_theme_mono.o(.text) refers to lv_btnmatrix.o(.constdata) for lv_btnmatrix_class
+    lv_theme_mono.o(.text) refers to lv_msgbox.o(.constdata) for lv_msgbox_class
+    lv_theme_mono.o(.text) refers to lv_bar.o(.constdata) for lv_bar_class
+    lv_theme_mono.o(.text) refers to lv_slider.o(.constdata) for lv_slider_class
+    lv_theme_mono.o(.text) refers to lv_table.o(.constdata) for lv_table_class
+    lv_theme_mono.o(.text) refers to lv_checkbox.o(.constdata) for lv_checkbox_class
+    lv_theme_mono.o(.text) refers to lv_switch.o(.constdata) for lv_switch_class
+    lv_theme_mono.o(.text) refers to lv_chart.o(.constdata) for lv_chart_class
+    lv_theme_mono.o(.text) refers to lv_roller.o(.constdata) for lv_roller_class
+    lv_theme_mono.o(.text) refers to lv_dropdown.o(.constdata) for lv_dropdown_class
+    lv_theme_mono.o(.text) refers to lv_arc.o(.constdata) for lv_arc_class
+    lv_theme_mono.o(.text) refers to lv_meter.o(.constdata) for lv_meter_class
+    lv_theme_mono.o(.text) refers to lv_textarea.o(.constdata) for lv_textarea_class
+    lv_theme_mono.o(.text) refers to lv_mem.o(.text) for lv_mem_alloc
+    lv_theme_mono.o(.text) refers to lv_disp.o(.text) for lv_disp_get_theme
+    lv_theme_mono.o(.text) refers to lv_style.o(.text) for lv_style_reset
+    lv_theme_mono.o(.text) refers to lv_calendar.o(.constdata) for lv_calendar_class
+    lv_theme_mono.o(.text) refers to lv_keyboard.o(.constdata) for lv_keyboard_class
+    lv_theme_mono.o(.text) refers to lv_list.o(.constdata) for lv_list_class
+    lv_theme_mono.o(.text) refers to lv_spinbox.o(.constdata) for lv_spinbox_class
+    lv_theme_mono.o(.text) refers to lv_tileview.o(.constdata) for lv_tileview_class
+    lv_theme_mono.o(.text) refers to lv_led.o(.constdata) for lv_led_class
+    lv_theme_mono.o(.text) refers to lv_theme_mono.o(.bss) for .bss
+    lv_theme_mono.o(.text) refers to lv_font_montserrat_14.o(.constdata) for lv_font_montserrat_14
+    lv_animimg.o(.text) refers to lv_obj_class.o(.text) for lv_obj_class_create_obj
+    lv_animimg.o(.text) refers to lv_anim.o(.text) for lv_anim_start
+    lv_animimg.o(.text) refers to lv_img.o(.text) for lv_img_set_src
+    lv_animimg.o(.text) refers to lv_animimg.o(.constdata) for .constdata
+    lv_animimg.o(.constdata) refers to lv_img.o(.constdata) for lv_img_class
+    lv_animimg.o(.constdata) refers to lv_animimg.o(.text) for lv_animimg_constructor
+    lv_calendar.o(.text) refers to lv_obj_class.o(.text) for lv_obj_class_create_obj
+    lv_calendar.o(.text) refers to lv_obj_pos.o(.text) for lv_obj_invalidate
+    lv_calendar.o(.text) refers to lv_btnmatrix.o(.text) for lv_btnmatrix_clear_btn_ctrl_all
+    lv_calendar.o(.text) refers to lv_printf.o(.text) for lv_snprintf
+    lv_calendar.o(.text) refers to lv_obj_tree.o(.text) for lv_obj_get_child_cnt
+    lv_calendar.o(.text) refers to lv_event.o(.text) for lv_event_send
+    lv_calendar.o(.text) refers to lv_color.o(.text) for lv_palette_main
+    lv_calendar.o(.text) refers to lv_theme.o(.text) for lv_theme_get_color_primary
+    lv_calendar.o(.text) refers to lv_calendar.o(.constdata) for .constdata
+    lv_calendar.o(.text) refers to lv_mem.o(.text) for lv_memset_00
+    lv_calendar.o(.text) refers to lv_flex.o(.text) for lv_obj_set_flex_flow
+    lv_calendar.o(.text) refers to lv_obj.o(.text) for lv_obj_add_flag
+    lv_calendar.o(.text) refers to lv_calendar.o(.data) for .data
+    lv_calendar.o(.constdata) refers to lv_obj.o(.constdata) for lv_obj_class
+    lv_calendar.o(.constdata) refers to lv_calendar.o(.text) for lv_calendar_constructor
+    lv_calendar.o(.data) refers to lv_calendar.o(.conststring) for .conststring
+    lv_calendar_header_arrow.o(.text) refers to lv_obj_class.o(.text) for lv_obj_class_create_obj
+    lv_calendar_header_arrow.o(.text) refers to lv_event.o(.text) for lv_event_get_target
+    lv_calendar_header_arrow.o(.text) refers to lv_obj_tree.o(.text) for lv_obj_get_parent
+    lv_calendar_header_arrow.o(.text) refers to lv_calendar.o(.text) for lv_calendar_get_showed_date
+    lv_calendar_header_arrow.o(.text) refers to lv_label.o(.text) for lv_label_set_text_fmt
+    lv_calendar_header_arrow.o(.text) refers to lv_flex.o(.text) for lv_obj_set_flex_flow
+    lv_calendar_header_arrow.o(.text) refers to lv_btn.o(.text) for lv_btn_create
+    lv_calendar_header_arrow.o(.text) refers to lv_obj_style_gen.o(.text) for lv_obj_set_style_bg_img_src
+    lv_calendar_header_arrow.o(.text) refers to lv_obj_pos.o(.text) for lv_obj_set_height
+    lv_calendar_header_arrow.o(.text) refers to lv_obj.o(.text) for lv_obj_clear_flag
+    lv_calendar_header_arrow.o(.text) refers to lv_calendar_header_arrow.o(.constdata) for .constdata
+    lv_calendar_header_arrow.o(.text) refers to lv_calendar_header_arrow.o(.data) for .data
+    lv_calendar_header_arrow.o(.constdata) refers to lv_obj.o(.constdata) for lv_obj_class
+    lv_calendar_header_arrow.o(.constdata) refers to lv_calendar_header_arrow.o(.text) for my_constructor
+    lv_calendar_header_arrow.o(.data) refers to lv_calendar_header_arrow.o(.conststring) for .conststring
+    lv_calendar_header_dropdown.o(.text) refers to lv_obj_class.o(.text) for lv_obj_class_create_obj
+    lv_calendar_header_dropdown.o(.text) refers to lv_event.o(.text) for lv_event_get_target
+    lv_calendar_header_dropdown.o(.text) refers to lv_obj_tree.o(.text) for lv_obj_get_parent
+    lv_calendar_header_dropdown.o(.text) refers to lv_calendar.o(.text) for lv_calendar_get_showed_date
+    lv_calendar_header_dropdown.o(.text) refers to lv_dropdown.o(.text) for lv_dropdown_set_selected
+    lv_calendar_header_dropdown.o(.text) refers to lv_flex.o(.text) for lv_obj_set_flex_flow
+    lv_calendar_header_dropdown.o(.text) refers to lv_calendar_header_dropdown.o(.constdata) for .constdata
+    lv_calendar_header_dropdown.o(.text) refers to lv_calendar_header_dropdown.o(.data) for .data
+    lv_calendar_header_dropdown.o(.constdata) refers to lv_obj.o(.constdata) for lv_obj_class
+    lv_calendar_header_dropdown.o(.constdata) refers to lv_calendar_header_dropdown.o(.text) for my_constructor
+    lv_calendar_header_dropdown.o(.data) refers to lv_calendar_header_dropdown.o(.conststring) for .conststring
+    lv_chart.o(.text) refers to lv_obj_class.o(.text) for lv_obj_class_create_obj
+    lv_chart.o(.text) refers to lv_obj_pos.o(.text) for lv_obj_invalidate
+    lv_chart.o(.text) refers to lv_ll.o(.text) for _lv_ll_get_tail
+    lv_chart.o(.text) refers to lv_mem.o(.text) for lv_mem_free
+    lv_chart.o(.text) refers to lv_obj_scroll.o(.text) for lv_obj_readjust_scroll
+    lv_chart.o(.text) refers to lv_obj_draw.o(.text) for lv_obj_refresh_ext_draw_size
+    lv_chart.o(.text) refers to lv_math.o(.text) for lv_map
+    lv_chart.o(.text) refers to lv_chart.o(.constdata) for .constdata
+    lv_chart.o(.text) refers to lv_obj_style.o(.text) for lv_obj_get_style_prop
+    lv_chart.o(.text) refers to lv_area.o(.text) for _lv_area_intersect
+    lv_chart.o(.text) refers to lv_draw_line.o(.text) for lv_draw_line_dsc_init
+    lv_chart.o(.text) refers to lv_draw_rect.o(.text) for lv_draw_rect_dsc_init
+    lv_chart.o(.text) refers to lv_event.o(.text) for lv_event_send
+    lv_chart.o(.text) refers to lv_draw_label.o(.text) for lv_draw_label_dsc_init
+    lv_chart.o(.text) refers to lv_printf.o(.text) for lv_snprintf
+    lv_chart.o(.text) refers to lv_txt.o(.text) for lv_txt_get_size
+    lv_chart.o(.text) refers to lv_indev.o(.text) for lv_indev_get_act
+    lv_chart.o(.constdata) refers to lv_obj.o(.constdata) for lv_obj_class
+    lv_chart.o(.constdata) refers to lv_chart.o(.text) for lv_chart_constructor
+    lv_colorwheel.o(.text) refers to lv_obj_class.o(.text) for lv_obj_class_create_obj
+    lv_colorwheel.o(.text) refers to lv_obj_pos.o(.text) for lv_obj_get_width
+    lv_colorwheel.o(.text) refers to lv_math.o(.text) for lv_trigo_sin
+    lv_colorwheel.o(.text) refers to lv_color.o(.text) for lv_color_rgb_to_hsv
+    lv_colorwheel.o(.text) refers to lv_obj.o(.text) for lv_obj_add_flag
+    lv_colorwheel.o(.text) refers to lv_colorwheel.o(.data) for .data
+    lv_colorwheel.o(.text) refers to lv_colorwheel.o(.constdata) for .constdata
+    lv_colorwheel.o(.text) refers to lv_event.o(.text) for lv_event_get_target
+    lv_colorwheel.o(.text) refers to lv_draw_line.o(.text) for lv_draw_line_dsc_init
+    lv_colorwheel.o(.text) refers to lv_obj_draw.o(.text) for lv_obj_init_draw_line_dsc
+    lv_colorwheel.o(.text) refers to lv_draw_mask.o(.text) for lv_draw_mask_radius_init
+    lv_colorwheel.o(.text) refers to lv_hal_tick.o(.text) for lv_tick_get
+    lv_colorwheel.o(.text) refers to lv_indev.o(.text) for lv_indev_get_act
+    lv_colorwheel.o(.text) refers to lv_area.o(.text) for _lv_area_is_point_on
+    lv_colorwheel.o(.text) refers to lv_draw_rect.o(.text) for lv_draw_rect_dsc_init
+    lv_colorwheel.o(.text) refers to lv_obj_style.o(.text) for lv_obj_get_style_prop
+    lv_colorwheel.o(.constdata) refers to lv_obj.o(.constdata) for lv_obj_class
+    lv_colorwheel.o(.constdata) refers to lv_colorwheel.o(.text) for lv_colorwheel_constructor
+    lv_imgbtn.o(.text) refers to lv_obj_class.o(.text) for lv_obj_class_create_obj
+    lv_imgbtn.o(.text) refers to lv_obj.o(.text) for lv_obj_get_state
+    lv_imgbtn.o(.text) refers to lv_img_decoder.o(.text) for lv_img_decoder_get_info
+    lv_imgbtn.o(.text) refers to lv_obj_pos.o(.text) for lv_obj_invalidate
+    lv_imgbtn.o(.text) refers to lv_mem.o(.text) for lv_memset_00
+    lv_imgbtn.o(.text) refers to lv_event.o(.text) for lv_event_get_target
+    lv_imgbtn.o(.text) refers to lv_obj_style.o(.text) for lv_obj_get_style_prop
+    lv_imgbtn.o(.text) refers to lv_draw_img.o(.text) for lv_draw_img_dsc_init
+    lv_imgbtn.o(.text) refers to lv_obj_draw.o(.text) for lv_obj_init_draw_img_dsc
+    lv_imgbtn.o(.text) refers to lv_area.o(.text) for _lv_area_intersect
+    lv_imgbtn.o(.text) refers to lv_imgbtn.o(.constdata) for .constdata
+    lv_imgbtn.o(.constdata) refers to lv_obj.o(.constdata) for lv_obj_class
+    lv_imgbtn.o(.constdata) refers to lv_imgbtn.o(.text) for lv_imgbtn_constructor
+    lv_keyboard.o(.text) refers to lv_obj_class.o(.text) for lv_obj_class_create_obj
+    lv_keyboard.o(.text) refers to lv_obj.o(.text) for lv_obj_clear_state
+    lv_keyboard.o(.text) refers to lv_btnmatrix.o(.text) for lv_btnmatrix_set_ctrl_map
+    lv_keyboard.o(.text) refers to lv_mem.o(.text) for lv_mem_alloc
+    lv_keyboard.o(.text) refers to lv_event.o(.text) for lv_event_get_target
+    lv_keyboard.o(.text) refers to strcmp.o(.text) for strcmp
+    lv_keyboard.o(.text) refers to lv_textarea.o(.text) for lv_textarea_add_text
+    lv_keyboard.o(.text) refers to lv_obj_pos.o(.text) for lv_obj_align
+    lv_keyboard.o(.text) refers to lv_obj_style_gen.o(.text) for lv_obj_set_style_base_dir
+    lv_keyboard.o(.text) refers to lv_keyboard.o(.constdata) for .constdata
+    lv_keyboard.o(.text) refers to lv_keyboard.o(.data) for .data
+    lv_keyboard.o(.constdata) refers to lv_btnmatrix.o(.constdata) for lv_btnmatrix_class
+    lv_keyboard.o(.constdata) refers to lv_keyboard.o(.text) for lv_keyboard_constructor
+    lv_keyboard.o(.constdata) refers to lv_keyboard.o(.conststring) for .conststring
+    lv_keyboard.o(.constdata) refers to lv_keyboard.o(.conststring) for .conststring
+    lv_keyboard.o(.constdata) refers to lv_keyboard.o(.conststring) for .conststring
+    lv_keyboard.o(.constdata) refers to lv_keyboard.o(.conststring) for .conststring
+    lv_keyboard.o(.data) refers to lv_keyboard.o(.constdata) for default_kb_map_lc
+    lv_keyboard.o(.data) refers to lv_keyboard.o(.constdata) for default_kb_map_uc
+    lv_keyboard.o(.data) refers to lv_keyboard.o(.constdata) for default_kb_map_spec
+    lv_keyboard.o(.data) refers to lv_keyboard.o(.constdata) for default_kb_map_num
+    lv_keyboard.o(.data) refers to lv_keyboard.o(.constdata) for default_kb_ctrl_lc_map
+    lv_keyboard.o(.data) refers to lv_keyboard.o(.constdata) for default_kb_ctrl_uc_map
+    lv_keyboard.o(.data) refers to lv_keyboard.o(.constdata) for default_kb_ctrl_spec_map
+    lv_keyboard.o(.data) refers to lv_keyboard.o(.constdata) for default_kb_ctrl_num_map
+    lv_led.o(.text) refers to lv_obj_class.o(.text) for lv_obj_class_create_obj
+    lv_led.o(.text) refers to lv_obj_pos.o(.text) for lv_obj_invalidate
+    lv_led.o(.text) refers to lv_theme.o(.text) for lv_theme_get_color_primary
+    lv_led.o(.text) refers to lv_event.o(.text) for lv_event_get_code
+    lv_led.o(.text) refers to lv_draw_rect.o(.text) for lv_draw_rect_dsc_init
+    lv_led.o(.text) refers to lv_obj_draw.o(.text) for lv_obj_init_draw_rect_dsc
+    lv_led.o(.text) refers to lv_led.o(.constdata) for .constdata
+    lv_led.o(.constdata) refers to lv_obj.o(.constdata) for lv_obj_class
+    lv_led.o(.constdata) refers to lv_led.o(.text) for lv_led_constructor
+    lv_list.o(.text) refers to lv_obj_class.o(.text) for lv_obj_class_create_obj
+    lv_list.o(.text) refers to lv_flex.o(.text) for lv_obj_set_flex_flow
+    lv_list.o(.text) refers to lv_label.o(.text) for lv_label_set_text
+    lv_list.o(.text) refers to lv_obj_pos.o(.text) for lv_obj_set_width
+    lv_list.o(.text) refers to lv_img.o(.text) for lv_img_create
+    lv_list.o(.text) refers to lv_obj_tree.o(.text) for lv_obj_get_child
+    lv_list.o(.text) refers to lv_obj.o(.text) for lv_obj_check_type
+    lv_list.o(.text) refers to lv_list.o(.constdata) for .constdata
+    lv_list.o(.text) refers to lv_label.o(.constdata) for lv_label_class
+    lv_list.o(.constdata) refers to lv_obj.o(.constdata) for lv_obj_class
+    lv_list.o(.constdata) refers to lv_btn.o(.constdata) for lv_btn_class
+    lv_list.o(.constdata) refers to lv_label.o(.constdata) for lv_label_class
+    lv_menu.o(.text) refers to lv_obj_class.o(.text) for lv_obj_class_create_obj
+    lv_menu.o(.text) refers to strlen.o(.text) for strlen
+    lv_menu.o(.text) refers to lv_mem.o(.text) for lv_mem_alloc
+    lv_menu.o(.text) refers to strcpy.o(.text) for strcpy
+    lv_menu.o(.text) refers to lv_obj_tree.o(.text) for lv_obj_move_to_index
+    lv_menu.o(.text) refers to lv_flex.o(.text) for lv_obj_set_flex_grow
+    lv_menu.o(.text) refers to lv_obj_pos.o(.text) for lv_obj_refr_size
+    lv_menu.o(.text) refers to lv_obj.o(.text) for lv_obj_clear_flag
+    lv_menu.o(.text) refers to lv_ll.o(.text) for _lv_ll_clear
+    lv_menu.o(.text) refers to lv_event.o(.text) for lv_event_send
+    lv_menu.o(.text) refers to lv_btn.o(.text) for lv_btn_create
+    lv_menu.o(.text) refers to lv_menu.o(.constdata) for .constdata
+    lv_menu.o(.text) refers to lv_img.o(.text) for lv_img_create
+    lv_menu.o(.text) refers to lv_label.o(.text) for lv_label_create
+    lv_menu.o(.text) refers to lv_group.o(.text) for lv_group_get_default
+    lv_menu.o(.text) refers to lv_flex.o(.data) for LV_LAYOUT_FLEX
+    lv_menu.o(.constdata) refers to lv_obj.o(.constdata) for lv_obj_class
+    lv_menu.o(.constdata) refers to lv_menu.o(.text) for lv_menu_constructor
+    lv_meter.o(.text) refers to lv_obj_class.o(.text) for lv_obj_class_create_obj
+    lv_meter.o(.text) refers to lv_ll.o(.text) for _lv_ll_ins_head
+    lv_meter.o(.text) refers to lv_mem.o(.text) for lv_memset_00
+    lv_meter.o(.text) refers to lv_obj_pos.o(.text) for lv_obj_invalidate
+    lv_meter.o(.text) refers to lv_math.o(.text) for lv_map
+    lv_meter.o(.text) refers to lv_img_decoder.o(.text) for lv_img_decoder_get_info
+    lv_meter.o(.text) refers to lv_img_buf.o(.text) for _lv_img_buf_get_transformed_area
+    lv_meter.o(.text) refers to lv_draw_arc.o(.text) for lv_draw_arc_get_area
+    lv_meter.o(.text) refers to lv_meter.o(.constdata) for .constdata
+    lv_meter.o(.text) refers to lv_draw_line.o(.text) for lv_draw_line_dsc_init
+    lv_meter.o(.text) refers to lv_obj_draw.o(.text) for lv_obj_init_draw_line_dsc
+    lv_meter.o(.text) refers to lv_draw_img.o(.text) for lv_draw_img_dsc_init
+    lv_meter.o(.text) refers to lv_obj_style.o(.text) for lv_obj_get_style_opa_recursive
+    lv_meter.o(.text) refers to lv_event.o(.text) for lv_event_send
+    lv_meter.o(.text) refers to lv_draw_label.o(.text) for lv_draw_label_dsc_init
+    lv_meter.o(.text) refers to lv_draw_mask.o(.text) for lv_draw_mask_radius_init
+    lv_meter.o(.text) refers to lv_area.o(.text) for lv_point_transform
+    lv_meter.o(.text) refers to lv_printf.o(.text) for lv_snprintf
+    lv_meter.o(.text) refers to lv_txt.o(.text) for lv_txt_get_size
+    lv_meter.o(.text) refers to lv_draw_rect.o(.text) for lv_draw_rect_dsc_init
+    lv_meter.o(.constdata) refers to lv_obj.o(.constdata) for lv_obj_class
+    lv_meter.o(.constdata) refers to lv_meter.o(.text) for lv_meter_constructor
+    lv_msgbox.o(.text) refers to lv_obj.o(.text) for lv_obj_has_flag
+    lv_msgbox.o(.text) refers to lv_obj_tree.o(.text) for lv_obj_get_parent
+    lv_msgbox.o(.text) refers to lv_event.o(.text) for lv_event_get_target
+    lv_msgbox.o(.text) refers to lv_hal_disp.o(.text) for lv_disp_get_default
+    lv_msgbox.o(.text) refers to lv_disp.o(.text) for lv_disp_get_layer_top
+    lv_msgbox.o(.text) refers to lv_obj_class.o(.text) for lv_obj_class_create_obj
+    lv_msgbox.o(.text) refers to lv_obj_pos.o(.text) for lv_obj_set_size
+    lv_msgbox.o(.text) refers to lv_flex.o(.text) for lv_obj_set_flex_flow
+    lv_msgbox.o(.text) refers to strlen.o(.text) for strlen
+    lv_msgbox.o(.text) refers to lv_label.o(.text) for lv_label_create
+    lv_msgbox.o(.text) refers to lv_btn.o(.text) for lv_btn_create
+    lv_msgbox.o(.text) refers to lv_btnmatrix.o(.text) for lv_btnmatrix_create
+    lv_msgbox.o(.text) refers to lv_obj_style_gen.o(.text) for lv_obj_set_style_max_width
+    lv_msgbox.o(.text) refers to lv_obj_style.o(.text) for lv_obj_get_style_prop
+    lv_msgbox.o(.text) refers to lv_msgbox.o(.constdata) for .constdata
+    lv_msgbox.o(.constdata) refers to lv_obj.o(.constdata) for lv_obj_class
+    lv_span.o(.text) refers to lv_obj_class.o(.text) for lv_obj_class_create_obj
+    lv_span.o(.text) refers to lv_ll.o(.text) for _lv_ll_ins_tail
+    lv_span.o(.text) refers to lv_style.o(.text) for lv_style_init
+    lv_span.o(.text) refers to lv_mem.o(.text) for lv_mem_free
+    lv_span.o(.text) refers to strlen.o(.text) for strlen
+    lv_span.o(.text) refers to strcpy.o(.text) for strcpy
+    lv_span.o(.text) refers to lv_obj_style_gen.o(.text) for lv_obj_set_style_text_align
+    lv_span.o(.text) refers to lv_obj_pos.o(.text) for lv_obj_invalidate
+    lv_span.o(.text) refers to lv_txt.o(.text) for _lv_txt_get_next_line
+    lv_span.o(.text) refers to memseta.o(.text) for __aeabi_memclr4
+    lv_span.o(.text) refers to lv_obj_style.o(.text) for lv_obj_get_style_prop
+    lv_span.o(.text) refers to lv_span.o(.constdata) for .constdata
+    lv_span.o(.text) refers to lv_txt.o(.data) for _lv_txt_encoded_prev
+    lv_span.o(.text) refers to lv_txt.o(.data) for _lv_txt_encoded_next
+    lv_span.o(.text) refers to lv_font.o(.text) for lv_font_get_glyph_width
+    lv_span.o(.text) refers to lv_area.o(.text) for _lv_area_intersect
+    lv_span.o(.text) refers to lv_draw_label.o(.text) for lv_draw_label_dsc_init
+    lv_span.o(.text) refers to memmovea.o(.text) for __aeabi_memcpy4
+    lv_span.o(.text) refers to lv_span.o(.bss) for .bss
+    lv_span.o(.text) refers to lv_draw_line.o(.text) for lv_draw_line_dsc_init
+    lv_span.o(.text) refers to lv_event.o(.text) for lv_obj_event_base
+    lv_span.o(.constdata) refers to lv_obj.o(.constdata) for lv_obj_class
+    lv_span.o(.constdata) refers to lv_span.o(.text) for lv_spangroup_constructor
+    lv_spinbox.o(.text) refers to lv_obj_class.o(.text) for lv_obj_class_create_obj
+    lv_spinbox.o(.text) refers to lv_mem.o(.text) for lv_memset_00
+    lv_spinbox.o(.text) refers to lv_printf.o(.text) for lv_snprintf
+    lv_spinbox.o(.text) refers to strlen.o(.text) for strlen
+    lv_spinbox.o(.text) refers to lv_textarea.o(.text) for lv_textarea_set_text
+    lv_spinbox.o(.text) refers to lv_math.o(.text) for lv_pow
+    lv_spinbox.o(.text) refers to lv_event.o(.text) for lv_obj_event_base
+    lv_spinbox.o(.text) refers to lv_indev.o(.text) for lv_indev_get_act
+    lv_spinbox.o(.text) refers to lv_obj.o(.text) for lv_obj_get_group
+    lv_spinbox.o(.text) refers to lv_group.o(.text) for lv_group_get_editing
+    lv_spinbox.o(.text) refers to lv_spinbox.o(.constdata) for .constdata
+    lv_spinbox.o(.constdata) refers to lv_textarea.o(.constdata) for lv_textarea_class
+    lv_spinbox.o(.constdata) refers to lv_spinbox.o(.text) for lv_spinbox_constructor
+    lv_spinner.o(.text) refers to lv_obj_class.o(.text) for lv_obj_class_create_obj
+    lv_spinner.o(.text) refers to lv_arc.o(.text) for lv_arc_set_start_angle
+    lv_spinner.o(.text) refers to lv_obj.o(.text) for lv_obj_clear_flag
+    lv_spinner.o(.text) refers to lv_anim.o(.text) for lv_anim_init
+    lv_spinner.o(.text) refers to lv_spinner.o(.data) for .data
+    lv_spinner.o(.text) refers to lv_spinner.o(.constdata) for .constdata
+    lv_spinner.o(.constdata) refers to lv_arc.o(.constdata) for lv_arc_class
+    lv_spinner.o(.constdata) refers to lv_spinner.o(.text) for lv_spinner_constructor
+    lv_tabview.o(.text) refers to lv_obj_class.o(.text) for lv_obj_class_create_obj
+    lv_tabview.o(.text) refers to lv_obj_tree.o(.text) for lv_obj_get_child
+    lv_tabview.o(.text) refers to lv_obj_pos.o(.text) for lv_obj_update_layout
+    lv_tabview.o(.text) refers to lv_obj_style.o(.text) for lv_obj_get_style_prop
+    lv_tabview.o(.text) refers to lv_obj_scroll.o(.text) for lv_obj_scroll_to_x
+    lv_tabview.o(.text) refers to lv_btnmatrix.o(.text) for lv_btnmatrix_set_btn_ctrl
+    lv_tabview.o(.text) refers to lv_obj.o(.text) for lv_obj_create
+    lv_tabview.o(.text) refers to lv_mem.o(.text) for lv_mem_alloc
+    lv_tabview.o(.text) refers to strlen.o(.text) for strlen
+    lv_tabview.o(.text) refers to strcpy.o(.text) for strcpy
+    lv_tabview.o(.text) refers to lv_event.o(.text) for lv_event_get_target
+    lv_tabview.o(.text) refers to lv_indev.o(.text) for lv_indev_get_act
+    lv_tabview.o(.text) refers to lv_flex.o(.text) for lv_obj_set_flex_flow
+    lv_tabview.o(.text) refers to lv_group.o(.text) for lv_group_get_default
+    lv_tabview.o(.text) refers to lv_tabview.o(.data) for .data
+    lv_tabview.o(.text) refers to lv_tabview.o(.constdata) for .constdata
+    lv_tabview.o(.constdata) refers to lv_obj.o(.constdata) for lv_obj_class
+    lv_tabview.o(.constdata) refers to lv_tabview.o(.text) for lv_tabview_constructor
+    lv_tileview.o(.text) refers to lv_obj_class.o(.text) for lv_obj_class_create_obj
+    lv_tileview.o(.text) refers to lv_obj_pos.o(.text) for lv_obj_get_x
+    lv_tileview.o(.text) refers to lv_obj_scroll.o(.text) for lv_obj_set_scroll_dir
+    lv_tileview.o(.text) refers to lv_obj_tree.o(.text) for lv_obj_get_child
+    lv_tileview.o(.text) refers to lv_event.o(.text) for lv_event_get_code
+    lv_tileview.o(.text) refers to lv_indev.o(.text) for lv_indev_get_act
+    lv_tileview.o(.text) refers to lv_obj.o(.text) for lv_obj_add_flag
+    lv_tileview.o(.text) refers to lv_tileview.o(.constdata) for .constdata
+    lv_tileview.o(.text) refers to lv_tileview.o(.data) for .data
+    lv_tileview.o(.constdata) refers to lv_obj.o(.constdata) for lv_obj_class
+    lv_tileview.o(.constdata) refers to lv_tileview.o(.text) for lv_tileview_constructor
+    lv_win.o(.text) refers to lv_obj_class.o(.text) for lv_obj_class_create_obj
+    lv_win.o(.text) refers to lv_obj_tree.o(.text) for lv_obj_get_child
+    lv_win.o(.text) refers to lv_label.o(.text) for lv_label_create
+    lv_win.o(.text) refers to lv_flex.o(.text) for lv_obj_set_flex_grow
+    lv_win.o(.text) refers to lv_btn.o(.text) for lv_btn_create
+    lv_win.o(.text) refers to lv_obj_pos.o(.text) for lv_obj_set_size
+    lv_win.o(.text) refers to lv_img.o(.text) for lv_img_create
+    lv_win.o(.text) refers to lv_obj.o(.text) for lv_obj_create
+    lv_win.o(.text) refers to lv_win.o(.data) for .data
+    lv_win.o(.text) refers to lv_win.o(.constdata) for .constdata
+    lv_win.o(.constdata) refers to lv_obj.o(.constdata) for lv_obj_class
+    lv_win.o(.constdata) refers to lv_win.o(.text) for lv_win_constructor
+    lv_font_fmt_txt.o(.text) refers to lv_utils.o(.text) for _lv_utils_bsearch
+    lv_font_loader.o(.text) refers to lv_mem.o(.text) for lv_mem_free
+    lv_font_loader.o(.text) refers to lv_fs.o(.text) for lv_fs_seek
+    lv_font_loader.o(.text) refers to memcmp.o(.text) for memcmp
+    lv_font_loader.o(.text) refers to memseta.o(.text) for __aeabi_memclr4
+    lv_font_loader.o(.text) refers to lv_font_fmt_txt.o(.text) for lv_font_get_glyph_dsc_fmt_txt
+    lv_font_montserrat_14.o(.constdata) refers to lv_font_montserrat_14.o(.constdata) for unicode_list_1
+    lv_font_montserrat_14.o(.constdata) refers to lv_font_montserrat_14.o(.constdata) for kern_class_values
+    lv_font_montserrat_14.o(.constdata) refers to lv_font_montserrat_14.o(.constdata) for kern_left_class_mapping
+    lv_font_montserrat_14.o(.constdata) refers to lv_font_montserrat_14.o(.constdata) for kern_right_class_mapping
+    lv_font_montserrat_14.o(.constdata) refers to lv_font_montserrat_14.o(.constdata) for glyph_bitmap
+    lv_font_montserrat_14.o(.constdata) refers to lv_font_montserrat_14.o(.constdata) for glyph_dsc
+    lv_font_montserrat_14.o(.constdata) refers to lv_font_montserrat_14.o(.constdata) for cmaps
+    lv_font_montserrat_14.o(.constdata) refers to lv_font_montserrat_14.o(.constdata) for kern_classes
+    lv_font_montserrat_14.o(.constdata) refers to lv_font_montserrat_14.o(.data) for cache
+    lv_font_montserrat_14.o(.constdata) refers to lv_font_fmt_txt.o(.text) for lv_font_get_glyph_dsc_fmt_txt
+    lv_font_montserrat_14.o(.constdata) refers to lv_font_montserrat_14.o(.constdata) for font_dsc
+    lv_font_montserrat_32.o(.constdata) refers to lv_font_montserrat_32.o(.constdata) for unicode_list_1
+    lv_font_montserrat_32.o(.constdata) refers to lv_font_montserrat_32.o(.constdata) for kern_class_values
+    lv_font_montserrat_32.o(.constdata) refers to lv_font_montserrat_32.o(.constdata) for kern_left_class_mapping
+    lv_font_montserrat_32.o(.constdata) refers to lv_font_montserrat_32.o(.constdata) for kern_right_class_mapping
+    lv_font_montserrat_32.o(.constdata) refers to lv_font_montserrat_32.o(.constdata) for glyph_bitmap
+    lv_font_montserrat_32.o(.constdata) refers to lv_font_montserrat_32.o(.constdata) for glyph_dsc
+    lv_font_montserrat_32.o(.constdata) refers to lv_font_montserrat_32.o(.constdata) for cmaps
+    lv_font_montserrat_32.o(.constdata) refers to lv_font_montserrat_32.o(.constdata) for kern_classes
+    lv_font_montserrat_32.o(.constdata) refers to lv_font_montserrat_32.o(.data) for cache
+    lv_font_montserrat_32.o(.constdata) refers to lv_font_fmt_txt.o(.text) for lv_font_get_glyph_dsc_fmt_txt
+    lv_font_montserrat_32.o(.constdata) refers to lv_font_montserrat_32.o(.constdata) for font_dsc
+    lv_hal_disp.o(.text) refers to lv_mem.o(.text) for lv_memset_00
+    lv_hal_disp.o(.text) refers to lv_ll.o(.text) for _lv_ll_ins_head
+    lv_hal_disp.o(.text) refers to lv_timer.o(.text) for lv_timer_create
+    lv_hal_disp.o(.text) refers to lv_theme_default.o(.text) for lv_theme_default_is_inited
+    lv_hal_disp.o(.text) refers to lv_obj.o(.text) for lv_obj_create
+    lv_hal_disp.o(.text) refers to lv_obj_style.o(.text) for lv_obj_remove_style
+    lv_hal_disp.o(.text) refers to lv_obj_scroll.o(.text) for lv_obj_set_scrollbar_mode
+    lv_hal_disp.o(.text) refers to lv_obj_pos.o(.text) for lv_obj_invalidate
+    lv_hal_disp.o(.text) refers to lv_color.o(.text) for lv_palette_main
+    lv_hal_disp.o(.text) refers to lv_area.o(.text) for lv_area_set_width
+    lv_hal_disp.o(.text) refers to lv_event.o(.text) for lv_event_send
+    lv_hal_disp.o(.text) refers to lv_obj_tree.o(.text) for lv_obj_tree_walk
+    lv_hal_disp.o(.text) refers to lv_hal_indev.o(.text) for lv_indev_get_next
+    lv_hal_disp.o(.text) refers to lv_draw_sw.o(.text) for lv_draw_sw_init_ctx
+    lv_hal_disp.o(.text) refers to lv_gc.o(.bss) for _lv_disp_ll
+    lv_hal_disp.o(.text) refers to lv_hal_disp.o(.data) for .data
+    lv_hal_disp.o(.text) refers to lv_refr.o(.text) for _lv_disp_refr_timer
+    lv_hal_disp.o(.text) refers to lv_font_montserrat_14.o(.constdata) for lv_font_montserrat_14
+    lv_hal_disp.o(.text) refers to lv_img_buf.o(.text) for lv_img_buf_get_px_alpha
+    lv_hal_indev.o(.text) refers to lv_mem.o(.text) for lv_memset_00
+    lv_hal_indev.o(.text) refers to lv_hal_disp.o(.text) for lv_disp_get_default
+    lv_hal_indev.o(.text) refers to lv_ll.o(.text) for _lv_ll_ins_head
+    lv_hal_indev.o(.text) refers to lv_timer.o(.text) for lv_timer_create
+    lv_hal_indev.o(.text) refers to lv_gc.o(.bss) for _lv_indev_ll
+    lv_hal_indev.o(.text) refers to lv_indev.o(.text) for lv_indev_read_timer_cb
+    lv_hal_tick.o(.text) refers to lv_hal_tick.o(.data) for .data
+    lv_anim.o(.text) refers to lv_hal_tick.o(.text) for lv_tick_elaps
+    lv_anim.o(.text) refers to lv_ll.o(.text) for _lv_ll_get_head
+    lv_anim.o(.text) refers to lv_timer.o(.text) for lv_timer_create
+    lv_anim.o(.text) refers to lv_math.o(.text) for lv_map
+    lv_anim.o(.text) refers to lv_mem.o(.text) for lv_memset_00
+    lv_anim.o(.text) refers to lv_anim.o(.data) for .data
+    lv_anim.o(.text) refers to lv_gc.o(.bss) for _lv_anim_ll
+    lv_anim_timeline.o(.text) refers to lv_mem.o(.text) for lv_mem_alloc
+    lv_anim_timeline.o(.text) refers to lv_anim.o(.text) for lv_anim_del
+    lv_anim_timeline.o(.text) refers to memmovea.o(.text) for __aeabi_memcpy4
+    lv_area.o(.text) refers to lv_math.o(.text) for lv_trigo_sin
+    lv_area.o(.text) refers to lv_area.o(.data) for .data
+    lv_async.o(.text) refers to lv_mem.o(.text) for lv_mem_free
+    lv_async.o(.text) refers to lv_timer.o(.text) for lv_timer_create
+    lv_color.o(.text) refers to lv_color.o(.constdata) for .constdata
+    lv_fs.o(.text) refers to lv_ll.o(.text) for _lv_ll_init
+    lv_fs.o(.text) refers to lv_mem.o(.text) for lv_mem_alloc
+    lv_fs.o(.text) refers to lv_gc.o(.bss) for _lv_fsdrv_ll
+    lv_fs.o(.text) refers to strlen.o(.text) for strlen
+    lv_gc.o(.text) refers to lv_mem.o(.text) for lv_memset_00
+    lv_gc.o(.text) refers to lv_gc.o(.bss) for .bss
+    lv_gc.o(.text) refers to lv_gc.o(.data) for .data
+    lv_ll.o(.text) refers to lv_mem.o(.text) for lv_mem_alloc
+    lv_lru.o(.text) refers to lv_mem.o(.text) for lv_mem_alloc
+    lv_lru.o(.text) refers to lv_math.o(.text) for lv_rand
+    lv_lru.o(.text) refers to memmovea.o(.text) for __aeabi_memcpy
+    lv_lru.o(.text) refers to memcmp.o(.text) for memcmp
+    lv_math.o(.text) refers to lv_math.o(.constdata) for .constdata
+    lv_math.o(.text) refers to lv_math.o(.data) for .data
+    lv_mem.o(.text) refers to lv_tlsf.o(.text) for lv_tlsf_create_with_pool
+    lv_mem.o(.text) refers to lv_mem.o(.bss) for .bss
+    lv_mem.o(.text) refers to lv_mem.o(.data) for .data
+    lv_mem.o(.text) refers to lv_gc.o(.bss) for lv_mem_buf
+    lv_printf.o(.text) refers to uldiv.o(.text) for __aeabi_uldivmod
+    lv_style.o(.text) refers to lv_mem.o(.text) for lv_memset_00
+    lv_style.o(.text) refers to lv_font_montserrat_14.o(.constdata) for lv_font_montserrat_14
+    lv_style.o(.text) refers to lv_gc.o(.data) for _lv_style_custom_prop_flag_lookup_table
+    lv_style.o(.text) refers to lv_style.o(.data) for .data
+    lv_style.o(.text) refers to lv_style.o(.constdata) for .constdata
+    lv_style.o(.text) refers to lv_anim.o(.text) for lv_anim_path_linear
+    lv_style_gen.o(.text) refers to lv_style.o(.text) for lv_style_set_prop
+    lv_timer.o(.text) refers to lv_ll.o(.text) for _lv_ll_init
+    lv_timer.o(.text) refers to lv_mem.o(.text) for lv_mem_free
+    lv_timer.o(.text) refers to lv_hal_tick.o(.text) for lv_tick_get
+    lv_timer.o(.text) refers to lv_timer.o(.data) for .data
+    lv_timer.o(.text) refers to lv_gc.o(.bss) for _lv_timer_ll
+    lv_timer.o(.text) refers to lv_gc.o(.data) for _lv_timer_act
+    lv_tlsf.o(.text) refers to lv_mem.o(.text) for lv_memcpy
+    lv_txt.o(.text) refers to lv_font.o(.text) for lv_font_get_glyph_width
+    lv_txt.o(.text) refers to strlen.o(.text) for strlen
+    lv_txt.o(.text) refers to lv_txt.o(.data) for .data
+    lv_txt.o(.text) refers to lv_printf.o(.text) for lv_vsnprintf
+    lv_txt.o(.text) refers to lv_mem.o(.text) for lv_mem_alloc
+    lv_txt.o(.data) refers to lv_txt.o(.text) for lv_txt_utf8_size
+    lv_txt.o(.data) refers to lv_txt.o(.text) for lv_txt_unicode_to_utf8
+    lv_txt.o(.data) refers to lv_txt.o(.text) for lv_txt_utf8_conv_wc
+    lv_txt.o(.data) refers to lv_txt.o(.text) for lv_txt_utf8_prev
+    lv_txt.o(.data) refers to lv_txt.o(.text) for lv_txt_utf8_get_char_id
+    lv_txt.o(.data) refers to lv_txt.o(.text) for lv_txt_utf8_get_length
+    lv_arc.o(.text) refers to lv_obj_class.o(.text) for lv_obj_class_create_obj
+    lv_arc.o(.text) refers to lv_obj_style.o(.text) for lv_obj_get_style_prop
+    lv_arc.o(.text) refers to lv_math.o(.text) for lv_trigo_sin
+    lv_arc.o(.text) refers to lv_obj_pos.o(.text) for lv_obj_get_width
+    lv_arc.o(.text) refers to lv_area.o(.text) for lv_area_increase
+    lv_arc.o(.text) refers to lv_draw_arc.o(.text) for lv_draw_arc_get_area
+    lv_arc.o(.text) refers to lv_arc.o(.constdata) for .constdata
+    lv_arc.o(.text) refers to lv_obj_style_gen.o(.text) for lv_obj_set_style_transform_pivot_x
+    lv_arc.o(.text) refers to lv_hal_tick.o(.text) for lv_tick_get
+    lv_arc.o(.text) refers to lv_obj.o(.text) for lv_obj_add_flag
+    lv_arc.o(.text) refers to lv_event.o(.text) for lv_event_get_target
+    lv_arc.o(.text) refers to lv_obj_draw.o(.text) for lv_obj_draw_dsc_init
+    lv_arc.o(.text) refers to lv_draw_rect.o(.text) for lv_draw_rect_dsc_init
+    lv_arc.o(.text) refers to lv_indev.o(.text) for lv_indev_get_act
+    lv_arc.o(.text) refers to lv_hal_disp.o(.text) for lv_disp_get_dpi
+    lv_arc.o(.text) refers to lv_group.o(.text) for lv_group_get_editing
+    lv_arc.o(.constdata) refers to lv_obj.o(.constdata) for lv_obj_class
+    lv_arc.o(.constdata) refers to lv_arc.o(.text) for lv_arc_constructor
+    lv_bar.o(.text) refers to lv_obj_class.o(.text) for lv_obj_class_create_obj
+    lv_bar.o(.text) refers to lv_obj_pos.o(.text) for lv_obj_invalidate
+    lv_bar.o(.text) refers to lv_anim.o(.text) for lv_anim_del
+    lv_bar.o(.text) refers to lv_obj_style.o(.text) for lv_obj_get_style_prop
+    lv_bar.o(.text) refers to lv_obj.o(.text) for lv_obj_clear_flag
+    lv_bar.o(.text) refers to lv_event.o(.text) for lv_event_get_target
+    lv_bar.o(.text) refers to lv_bar.o(.constdata) for .constdata
+    lv_bar.o(.text) refers to lv_obj_draw.o(.text) for lv_obj_draw_dsc_init
+    lv_bar.o(.text) refers to lv_draw_rect.o(.text) for lv_draw_rect_dsc_init
+    lv_bar.o(.text) refers to lv_draw_mask.o(.text) for lv_draw_mask_radius_init
+    lv_bar.o(.constdata) refers to lv_obj.o(.constdata) for lv_obj_class
+    lv_bar.o(.constdata) refers to lv_bar.o(.text) for lv_bar_constructor
+    lv_btn.o(.text) refers to lv_obj_class.o(.text) for lv_obj_class_create_obj
+    lv_btn.o(.text) refers to lv_obj.o(.text) for lv_obj_clear_flag
+    lv_btn.o(.text) refers to lv_btn.o(.constdata) for .constdata
+    lv_btn.o(.constdata) refers to lv_obj.o(.constdata) for lv_obj_class
+    lv_btn.o(.constdata) refers to lv_btn.o(.text) for lv_btn_constructor
+    lv_btnmatrix.o(.text) refers to lv_obj_class.o(.text) for lv_obj_class_create_obj
+    lv_btnmatrix.o(.text) refers to lv_obj_style.o(.text) for lv_obj_get_style_prop
+    lv_btnmatrix.o(.text) refers to lv_obj_pos.o(.text) for lv_obj_get_content_width
+    lv_btnmatrix.o(.text) refers to strcmp.o(.text) for strcmp
+    lv_btnmatrix.o(.text) refers to lv_area.o(.text) for lv_area_set
+    lv_btnmatrix.o(.text) refers to lv_obj_draw.o(.text) for lv_obj_refresh_ext_draw_size
+    lv_btnmatrix.o(.text) refers to lv_mem.o(.text) for lv_memcpy
+    lv_btnmatrix.o(.text) refers to lv_obj_tree.o(.text) for lv_obj_get_disp
+    lv_btnmatrix.o(.text) refers to lv_hal_disp.o(.text) for lv_disp_get_dpi
+    lv_btnmatrix.o(.text) refers to lv_obj.o(.text) for lv_obj_has_flag
+    lv_btnmatrix.o(.text) refers to lv_btnmatrix.o(.constdata) for .constdata
+    lv_btnmatrix.o(.text) refers to lv_event.o(.text) for lv_event_get_target
+    lv_btnmatrix.o(.text) refers to lv_draw_rect.o(.text) for lv_draw_rect_dsc_init
+    lv_btnmatrix.o(.text) refers to lv_draw_label.o(.text) for lv_draw_label_dsc_init
+    lv_btnmatrix.o(.text) refers to lv_txt.o(.text) for lv_txt_get_size
+    lv_btnmatrix.o(.text) refers to lv_btnmatrix.o(.data) for .data
+    lv_btnmatrix.o(.text) refers to lv_indev.o(.text) for lv_indev_get_act
+    lv_btnmatrix.o(.text) refers to lv_hal_indev.o(.text) for lv_indev_get_next
+    lv_btnmatrix.o(.text) refers to lv_group.o(.text) for lv_group_get_editing
+    lv_btnmatrix.o(.constdata) refers to lv_obj.o(.constdata) for lv_obj_class
+    lv_btnmatrix.o(.constdata) refers to lv_btnmatrix.o(.text) for lv_btnmatrix_constructor
+    lv_btnmatrix.o(.data) refers to lv_btnmatrix.o(.conststring) for .conststring
+    lv_canvas.o(.text) refers to lv_obj_class.o(.text) for lv_obj_class_create_obj
+    lv_canvas.o(.text) refers to lv_img.o(.text) for lv_img_set_src
+    lv_canvas.o(.text) refers to lv_img_cache.o(.text) for lv_img_cache_invalidate_src
+    lv_canvas.o(.text) refers to lv_img_buf.o(.text) for lv_img_buf_set_px_color
+    lv_canvas.o(.text) refers to lv_obj_pos.o(.text) for lv_obj_invalidate
+    lv_canvas.o(.text) refers to lv_draw_img.o(.text) for lv_img_cf_get_px_size
+    lv_canvas.o(.text) refers to lv_mem.o(.text) for lv_memcpy
+    lv_canvas.o(.text) refers to lv_draw_sw_transform.o(.text) for lv_draw_sw_transform
+    lv_canvas.o(.text) refers to lv_canvas.o(.constdata) for .constdata
+    lv_canvas.o(.text) refers to lv_hal_disp.o(.text) for lv_disp_drv_init
+    lv_canvas.o(.text) refers to lv_draw_sw.o(.text) for lv_draw_sw_init_ctx
+    lv_canvas.o(.text) refers to lv_refr.o(.text) for _lv_refr_get_disp_refreshing
+    lv_canvas.o(.text) refers to lv_draw_rect.o(.text) for lv_draw_rect
+    lv_canvas.o(.text) refers to lv_draw_label.o(.text) for lv_draw_label
+    lv_canvas.o(.text) refers to lv_img_decoder.o(.text) for lv_img_decoder_get_info
+    lv_canvas.o(.text) refers to lv_draw_line.o(.text) for lv_draw_line
+    lv_canvas.o(.text) refers to lv_draw_triangle.o(.text) for lv_draw_polygon
+    lv_canvas.o(.text) refers to lv_draw_arc.o(.text) for lv_draw_arc
+    lv_canvas.o(.text) refers to lv_obj_style.o(.text) for lv_obj_get_style_prop
+    lv_canvas.o(.constdata) refers to lv_img.o(.constdata) for lv_img_class
+    lv_canvas.o(.constdata) refers to lv_canvas.o(.text) for lv_canvas_constructor
+    lv_checkbox.o(.text) refers to lv_obj_class.o(.text) for lv_obj_class_create_obj
+    lv_checkbox.o(.text) refers to strlen.o(.text) for strlen
+    lv_checkbox.o(.text) refers to lv_mem.o(.text) for lv_mem_alloc
+    lv_checkbox.o(.text) refers to strcpy.o(.text) for strcpy
+    lv_checkbox.o(.text) refers to lv_obj_pos.o(.text) for lv_obj_refresh_self_size
+    lv_checkbox.o(.text) refers to lv_obj.o(.text) for lv_obj_add_flag
+    lv_checkbox.o(.text) refers to lv_event.o(.text) for lv_event_get_target
+    lv_checkbox.o(.text) refers to lv_obj_style.o(.text) for lv_obj_get_style_prop
+    lv_checkbox.o(.text) refers to lv_draw_rect.o(.text) for lv_draw_rect_dsc_init
+    lv_checkbox.o(.text) refers to lv_obj_draw.o(.text) for lv_obj_init_draw_rect_dsc
+    lv_checkbox.o(.text) refers to lv_txt.o(.text) for lv_txt_get_size
+    lv_checkbox.o(.text) refers to lv_draw_label.o(.text) for lv_draw_label_dsc_init
+    lv_checkbox.o(.text) refers to lv_checkbox.o(.constdata) for .constdata
+    lv_checkbox.o(.constdata) refers to lv_obj.o(.constdata) for lv_obj_class
+    lv_checkbox.o(.constdata) refers to lv_checkbox.o(.text) for lv_checkbox_constructor
+    lv_dropdown.o(.text) refers to lv_obj_class.o(.text) for lv_obj_class_create_obj
+    lv_dropdown.o(.text) refers to lv_obj_pos.o(.text) for lv_obj_invalidate
+    lv_dropdown.o(.text) refers to strlen.o(.text) for strlen
+    lv_dropdown.o(.text) refers to lv_mem.o(.text) for lv_mem_free
+    lv_dropdown.o(.text) refers to strcpy.o(.text) for strcpy
+    lv_dropdown.o(.text) refers to lv_txt.o(.text) for _lv_txt_ins
+    lv_dropdown.o(.text) refers to strcat.o(.text) for strcat
+    lv_dropdown.o(.text) refers to lv_obj_scroll.o(.text) for lv_obj_scroll_to_y
+    lv_dropdown.o(.text) refers to memcmp.o(.text) for memcmp
+    lv_dropdown.o(.text) refers to lv_obj.o(.text) for lv_obj_add_state
+    lv_dropdown.o(.text) refers to lv_obj_tree.o(.text) for lv_obj_get_screen
+    lv_dropdown.o(.text) refers to lv_dropdown.o(.constdata) for .constdata
+    lv_dropdown.o(.text) refers to lv_txt.o(.data) for _lv_txt_encoded_get_char_id
+    lv_dropdown.o(.text) refers to lv_event.o(.text) for lv_event_send
+    lv_dropdown.o(.text) refers to lv_label.o(.text) for lv_label_set_text_static
+    lv_dropdown.o(.text) refers to lv_obj_style.o(.text) for lv_obj_get_style_prop
+    lv_dropdown.o(.text) refers to lv_hal_disp.o(.text) for lv_disp_get_default
+    lv_dropdown.o(.text) refers to lv_draw_label.o(.text) for lv_draw_label_dsc_init
+    lv_dropdown.o(.text) refers to lv_obj_draw.o(.text) for lv_obj_init_draw_label_dsc
+    lv_dropdown.o(.text) refers to lv_draw_img.o(.text) for lv_img_src_get_type
+    lv_dropdown.o(.text) refers to lv_img_decoder.o(.text) for lv_img_decoder_get_info
+    lv_dropdown.o(.text) refers to lv_indev.o(.text) for lv_indev_get_act
+    lv_dropdown.o(.text) refers to lv_group.o(.text) for lv_group_set_editing
+    lv_dropdown.o(.text) refers to lv_area.o(.text) for _lv_area_intersect
+    lv_dropdown.o(.text) refers to lv_draw_rect.o(.text) for lv_draw_rect_dsc_init
+    lv_dropdown.o(.constdata) refers to lv_obj.o(.constdata) for lv_obj_class
+    lv_dropdown.o(.constdata) refers to lv_dropdown.o(.text) for lv_dropdown_constructor
+    lv_img.o(.text) refers to lv_obj_class.o(.text) for lv_obj_class_create_obj
+    lv_img.o(.text) refers to lv_obj_pos.o(.text) for lv_obj_invalidate
+    lv_img.o(.text) refers to lv_draw_img.o(.text) for lv_img_src_get_type
+    lv_img.o(.text) refers to lv_img_decoder.o(.text) for lv_img_decoder_get_info
+    lv_img.o(.text) refers to lv_mem.o(.text) for lv_mem_free
+    lv_img.o(.text) refers to strlen.o(.text) for strlen
+    lv_img.o(.text) refers to strcpy.o(.text) for strcpy
+    lv_img.o(.text) refers to lv_obj_style.o(.text) for lv_obj_get_style_prop
+    lv_img.o(.text) refers to lv_txt.o(.text) for lv_txt_get_size
+    lv_img.o(.text) refers to lv_obj_draw.o(.text) for lv_obj_refresh_ext_draw_size
+    lv_img.o(.text) refers to lv_img_buf.o(.text) for _lv_img_buf_get_transformed_area
+    lv_img.o(.text) refers to lv_obj_tree.o(.text) for lv_obj_get_disp
+    lv_img.o(.text) refers to lv_disp.o(.text) for lv_disp_enable_invalidation
+    lv_img.o(.text) refers to lv_img.o(.constdata) for .constdata
+    lv_img.o(.text) refers to lv_obj.o(.text) for lv_obj_clear_flag
+    lv_img.o(.text) refers to lv_event.o(.text) for lv_event_get_code
+    lv_img.o(.text) refers to lv_area.o(.text) for _lv_area_is_in
+    lv_img.o(.text) refers to lv_draw_label.o(.text) for lv_draw_label_dsc_init
+    lv_img.o(.constdata) refers to lv_obj.o(.constdata) for lv_obj_class
+    lv_img.o(.constdata) refers to lv_img.o(.text) for lv_img_constructor
+    lv_label.o(.text) refers to lv_obj_class.o(.text) for lv_obj_class_create_obj
+    lv_label.o(.text) refers to lv_obj_style.o(.text) for lv_obj_get_style_prop
+    lv_label.o(.text) refers to lv_obj_pos.o(.text) for lv_obj_get_content_coords
+    lv_label.o(.text) refers to lv_txt.o(.text) for _lv_txt_get_next_line
+    lv_label.o(.text) refers to lv_font.o(.text) for lv_font_get_glyph_width
+    lv_label.o(.text) refers to lv_obj_tree.o(.text) for lv_obj_get_disp
+    lv_label.o(.text) refers to lv_hal_disp.o(.text) for lv_disp_get_dpi
+    lv_label.o(.text) refers to lv_anim.o(.text) for lv_anim_init
+    lv_label.o(.text) refers to lv_label.o(.constdata) for .constdata
+    lv_label.o(.text) refers to lv_txt.o(.data) for _lv_txt_encoded_prev
+    lv_label.o(.text) refers to lv_txt.o(.data) for _lv_txt_encoded_get_char_id
+    lv_label.o(.text) refers to strlen.o(.text) for strlen
+    lv_label.o(.text) refers to lv_mem.o(.text) for lv_mem_alloc
+    lv_label.o(.text) refers to strcpy.o(.text) for strcpy
+    lv_label.o(.text) refers to lv_txt.o(.data) for _lv_txt_get_encoded_length
+    lv_label.o(.text) refers to lv_txt.o(.data) for _lv_txt_encoded_get_byte_id
+    lv_label.o(.text) refers to lv_obj.o(.text) for lv_obj_clear_flag
+    lv_label.o(.text) refers to lv_event.o(.text) for lv_event_get_target
+    lv_label.o(.text) refers to lv_draw_label.o(.text) for lv_draw_label_dsc_init
+    lv_label.o(.text) refers to lv_obj_draw.o(.text) for lv_obj_init_draw_label_dsc
+    lv_label.o(.text) refers to lv_area.o(.text) for _lv_area_intersect
+    lv_label.o(.text) refers to lv_obj_scroll.o(.text) for lv_obj_get_scroll_top
+    lv_label.o(.constdata) refers to lv_obj.o(.constdata) for lv_obj_class
+    lv_label.o(.constdata) refers to lv_label.o(.text) for lv_label_constructor
+    lv_line.o(.text) refers to lv_obj_class.o(.text) for lv_obj_class_create_obj
+    lv_line.o(.text) refers to lv_obj_pos.o(.text) for lv_obj_refresh_self_size
+    lv_line.o(.text) refers to lv_obj.o(.text) for lv_obj_clear_flag
+    lv_line.o(.text) refers to lv_event.o(.text) for lv_obj_event_base
+    lv_line.o(.text) refers to lv_obj_scroll.o(.text) for lv_obj_get_scroll_x
+    lv_line.o(.text) refers to lv_draw_line.o(.text) for lv_draw_line_dsc_init
+    lv_line.o(.text) refers to lv_obj_draw.o(.text) for lv_obj_init_draw_line_dsc
+    lv_line.o(.text) refers to lv_obj_style.o(.text) for lv_obj_get_style_prop
+    lv_line.o(.text) refers to lv_line.o(.constdata) for .constdata
+    lv_line.o(.constdata) refers to lv_obj.o(.constdata) for lv_obj_class
+    lv_line.o(.constdata) refers to lv_line.o(.text) for lv_line_constructor
+    lv_roller.o(.text) refers to lv_obj_class.o(.text) for lv_obj_class_create_obj
+    lv_roller.o(.text) refers to lv_obj_pos.o(.text) for lv_obj_get_content_height
+    lv_roller.o(.text) refers to strlen.o(.text) for strlen
+    lv_roller.o(.text) refers to lv_mem.o(.text) for lv_mem_buf_get
+    lv_roller.o(.text) refers to strcpy.o(.text) for strcpy
+    lv_roller.o(.text) refers to lv_label.o(.text) for lv_label_set_text
+    lv_roller.o(.text) refers to lv_obj_draw.o(.text) for lv_obj_refresh_ext_draw_size
+    lv_roller.o(.text) refers to lv_obj_tree.o(.text) for lv_obj_get_parent
+    lv_roller.o(.text) refers to lv_obj_style.o(.text) for lv_obj_calculate_style_text_align
+    lv_roller.o(.text) refers to lv_anim.o(.text) for lv_anim_init
+    lv_roller.o(.text) refers to lv_obj.o(.text) for lv_obj_clear_flag
+    lv_roller.o(.text) refers to lv_roller.o(.constdata) for .constdata
+    lv_roller.o(.text) refers to lv_event.o(.text) for lv_event_get_code
+    lv_roller.o(.text) refers to lv_draw_label.o(.text) for lv_draw_label_dsc_init
+    lv_roller.o(.text) refers to lv_area.o(.text) for _lv_area_intersect
+    lv_roller.o(.text) refers to lv_txt.o(.text) for lv_txt_get_size
+    lv_roller.o(.text) refers to lv_draw_rect.o(.text) for lv_draw_rect_dsc_init
+    lv_roller.o(.text) refers to lv_indev.o(.text) for lv_indev_get_act
+    lv_roller.o(.text) refers to lv_group.o(.text) for lv_group_get_editing
+    lv_roller.o(.text) refers to lv_indev_scroll.o(.text) for lv_indev_scroll_throw_predict
+    lv_roller.o(.text) refers to lv_txt.o(.data) for _lv_txt_encoded_next
+    lv_roller.o(.constdata) refers to lv_obj.o(.constdata) for lv_obj_class
+    lv_roller.o(.constdata) refers to lv_roller.o(.text) for lv_roller_constructor
+    lv_roller.o(.constdata) refers to lv_label.o(.constdata) for lv_label_class
+    lv_slider.o(.text) refers to lv_obj_class.o(.text) for lv_obj_class_create_obj
+    lv_slider.o(.text) refers to lv_obj.o(.text) for lv_obj_clear_flag
+    lv_slider.o(.text) refers to lv_hal_disp.o(.text) for lv_disp_get_dpi
+    lv_slider.o(.text) refers to lv_obj_pos.o(.text) for lv_obj_set_ext_click_area
+    lv_slider.o(.text) refers to lv_event.o(.text) for lv_event_get_target
+    lv_slider.o(.text) refers to lv_draw_rect.o(.text) for lv_draw_rect_dsc_init
+    lv_slider.o(.text) refers to lv_obj_draw.o(.text) for lv_obj_init_draw_rect_dsc
+    lv_slider.o(.text) refers to lv_mem.o(.text) for lv_memcpy
+    lv_slider.o(.text) refers to lv_area.o(.text) for lv_area_increase
+    lv_slider.o(.text) refers to lv_indev.o(.text) for lv_indev_get_act
+    lv_slider.o(.text) refers to lv_slider.o(.constdata) for .constdata
+    lv_slider.o(.text) refers to lv_bar.o(.text) for lv_bar_set_start_value
+    lv_slider.o(.text) refers to lv_group.o(.text) for lv_group_get_editing
+    lv_slider.o(.text) refers to lv_obj_style.o(.text) for lv_obj_get_style_prop
+    lv_slider.o(.constdata) refers to lv_bar.o(.constdata) for lv_bar_class
+    lv_slider.o(.constdata) refers to lv_slider.o(.text) for lv_slider_constructor
+    lv_switch.o(.text) refers to lv_obj_class.o(.text) for lv_obj_class_create_obj
+    lv_switch.o(.text) refers to lv_obj.o(.text) for lv_obj_clear_flag
+    lv_switch.o(.text) refers to lv_anim.o(.text) for lv_anim_del
+    lv_switch.o(.text) refers to lv_event.o(.text) for lv_event_get_target
+    lv_switch.o(.text) refers to lv_draw_rect.o(.text) for lv_draw_rect_dsc_init
+    lv_switch.o(.text) refers to lv_obj_draw.o(.text) for lv_obj_init_draw_rect_dsc
+    lv_switch.o(.text) refers to lv_obj_pos.o(.text) for lv_obj_get_height
+    lv_switch.o(.text) refers to lv_obj_style.o(.text) for lv_obj_get_style_prop
+    lv_switch.o(.text) refers to lv_switch.o(.constdata) for .constdata
+    lv_switch.o(.constdata) refers to lv_obj.o(.constdata) for lv_obj_class
+    lv_switch.o(.constdata) refers to lv_switch.o(.text) for lv_switch_constructor
+    lv_table.o(.text) refers to lv_obj_class.o(.text) for lv_obj_class_create_obj
+    lv_table.o(.text) refers to lv_obj_scroll.o(.text) for lv_obj_get_scroll_x
+    lv_table.o(.text) refers to lv_obj_pos.o(.text) for lv_obj_get_width
+    lv_table.o(.text) refers to lv_txt.o(.text) for lv_txt_get_size
+    lv_table.o(.text) refers to lv_area.o(.text) for lv_area_move
+    lv_table.o(.text) refers to lv_mem.o(.text) for lv_mem_realloc
+    lv_table.o(.text) refers to lv_table.o(.constdata) for .constdata
+    lv_table.o(.text) refers to strlen.o(.text) for strlen
+    lv_table.o(.text) refers to strcpy.o(.text) for strcpy
+    lv_table.o(.text) refers to lv_printf.o(.text) for lv_vsnprintf
+    lv_table.o(.text) refers to lv_event.o(.text) for lv_event_get_target
+    lv_table.o(.text) refers to lv_obj_style.o(.text) for lv_obj_get_style_prop
+    lv_table.o(.text) refers to lv_draw_rect.o(.text) for lv_draw_rect_dsc_init
+    lv_table.o(.text) refers to lv_obj_draw.o(.text) for lv_obj_init_draw_rect_dsc
+    lv_table.o(.text) refers to lv_draw_label.o(.text) for lv_draw_label_dsc_init
+    lv_table.o(.text) refers to lv_indev.o(.text) for lv_indev_get_act
+    lv_table.o(.constdata) refers to lv_obj.o(.constdata) for lv_obj_class
+    lv_table.o(.constdata) refers to lv_table.o(.text) for lv_table_constructor
+    lv_textarea.o(.text) refers to lv_obj_class.o(.text) for lv_obj_class_create_obj
+    lv_textarea.o(.text) refers to lv_label.o(.text) for lv_label_get_text
+    lv_textarea.o(.text) refers to lv_font.o(.text) for lv_font_get_glyph_width
+    lv_textarea.o(.text) refers to lv_obj_style.o(.text) for lv_obj_calculate_style_text_align
+    lv_textarea.o(.text) refers to lv_obj_pos.o(.text) for lv_obj_invalidate_area
+    lv_textarea.o(.text) refers to lv_anim.o(.text) for lv_anim_init
+    lv_textarea.o(.text) refers to lv_obj_scroll.o(.text) for lv_obj_get_scroll_top
+    lv_textarea.o(.text) refers to lv_textarea.o(.constdata) for .constdata
+    lv_textarea.o(.text) refers to lv_txt.o(.data) for _lv_txt_encoded_get_byte_id
+    lv_textarea.o(.text) refers to lv_txt.o(.data) for _lv_txt_get_encoded_length
+    lv_textarea.o(.text) refers to strlen.o(.text) for strlen
+    lv_textarea.o(.text) refers to lv_mem.o(.text) for lv_mem_buf_get
+    lv_textarea.o(.text) refers to lv_txt.o(.text) for _lv_txt_ins
+    lv_textarea.o(.text) refers to lv_event.o(.text) for lv_event_send
+    lv_textarea.o(.text) refers to strcmp.o(.text) for strcmp
+    lv_textarea.o(.text) refers to strcpy.o(.text) for strcpy
+    lv_textarea.o(.text) refers to lv_txt.o(.data) for _lv_txt_unicode_to_encoded
+    lv_textarea.o(.text) refers to lv_textarea.o(.data) for .data
+    lv_textarea.o(.text) refers to lv_obj_style_gen.o(.text) for lv_obj_set_style_min_width
+    lv_textarea.o(.text) refers to lv_obj_tree.o(.text) for lv_obj_get_parent
+    lv_textarea.o(.text) refers to lv_obj.o(.text) for lv_obj_add_flag
+    lv_textarea.o(.text) refers to lv_draw_rect.o(.text) for lv_draw_rect_dsc_init
+    lv_textarea.o(.text) refers to lv_obj_draw.o(.text) for lv_obj_init_draw_rect_dsc
+    lv_textarea.o(.text) refers to lv_draw_label.o(.text) for lv_draw_label_dsc_init
+    lv_textarea.o(.text) refers to lv_indev.o(.text) for lv_indev_get_act
+    lv_textarea.o(.text) refers to lv_area.o(.text) for lv_area_move
+    lv_textarea.o(.constdata) refers to lv_obj.o(.constdata) for lv_obj_class
+    lv_textarea.o(.constdata) refers to lv_textarea.o(.text) for lv_textarea_constructor
+    lv_port_disp.o(.text) refers to lcd_screen.o(.text) for LCD_Color_Fill
+    lv_port_disp.o(.text) refers to lv_hal_disp.o(.text) for lv_disp_flush_ready
+    lv_port_disp.o(.text) refers to lv_port_disp.o(.data) for .data
+    lv_port_disp.o(.text) refers to lcd_screen.o(.bss) for lcddev
+    lv_port_disp.o(.text) refers to lv_port_disp.o(.bss) for .bss
+    lv_port_indev.o(.text) refers to lcd_touch.o(.text) for TP_Scan
+    lv_port_indev.o(.text) refers to lv_hal_indev.o(.text) for lv_indev_drv_init
+    lv_port_indev.o(.text) refers to lv_port_indev.o(.data) for .data
+    lv_port_indev.o(.text) refers to lcd_touch.o(.data) for tp_dev
+    lv_port_indev.o(.text) refers to lv_port_indev.o(.bss) for .bss
+    lv_demo_benchmark.o(.text) refers to lv_obj_pos.o(.text) for lv_obj_set_y
+    lv_demo_benchmark.o(.text) refers to lv_anim.o(.text) for lv_anim_init
+    lv_demo_benchmark.o(.text) refers to lv_obj.o(.text) for lv_obj_create
+    lv_demo_benchmark.o(.text) refers to lv_obj_style.o(.text) for lv_obj_add_style
+    lv_demo_benchmark.o(.text) refers to lv_obj_style_gen.o(.text) for lv_obj_set_style_bg_color
+    lv_demo_benchmark.o(.text) refers to lv_hal_disp.o(.text) for lv_disp_get_default
+    lv_demo_benchmark.o(.text) refers to lv_style.o(.text) for lv_style_reset
+    lv_demo_benchmark.o(.text) refers to lv_style_gen.o(.text) for lv_style_set_bg_opa
+    lv_demo_benchmark.o(.text) refers to lv_demo_benchmark.o(.constdata) for .constdata
+    lv_demo_benchmark.o(.text) refers to lv_demo_benchmark.o(.data) for .data
+    lv_demo_benchmark.o(.text) refers to lv_img.o(.text) for lv_img_create
+    lv_demo_benchmark.o(.text) refers to img_benchmark_cogwheel_rgb.o(.constdata) for img_benchmark_cogwheel_rgb
+    lv_demo_benchmark.o(.text) refers to img_benchmark_cogwheel_argb.o(.constdata) for img_benchmark_cogwheel_argb
+    lv_demo_benchmark.o(.text) refers to img_benchmark_cogwheel_chroma_keyed.o(.constdata) for img_benchmark_cogwheel_chroma_keyed
+    lv_demo_benchmark.o(.text) refers to img_benchmark_cogwheel_indexed16.o(.constdata) for img_benchmark_cogwheel_indexed16
+    lv_demo_benchmark.o(.text) refers to img_benchmark_cogwheel_alpha16.o(.constdata) for img_benchmark_cogwheel_alpha16
+    lv_demo_benchmark.o(.text) refers to lv_label.o(.text) for lv_label_create
+    lv_demo_benchmark.o(.text) refers to lv_theme.o(.text) for lv_theme_get_font_small
+    lv_demo_benchmark.o(.text) refers to lv_line.o(.text) for lv_line_create
+    lv_demo_benchmark.o(.text) refers to lv_arc.o(.text) for lv_arc_set_end_angle
+    lv_demo_benchmark.o(.text) refers to lv_demo_benchmark.o(.conststring) for .conststring
+    lv_demo_benchmark.o(.text) refers to lv_font_bechmark_montserrat_12_compr_az.c.o(.data) for lv_font_benchmark_montserrat_12_compr_az
+    lv_demo_benchmark.o(.text) refers to lv_font_bechmark_montserrat_16_compr_az.c.o(.data) for lv_font_benchmark_montserrat_16_compr_az
+    lv_demo_benchmark.o(.text) refers to lv_font_bechmark_montserrat_28_compr_az.c.o(.data) for lv_font_benchmark_montserrat_28_compr_az
+    lv_demo_benchmark.o(.text) refers to lv_demo_benchmark.o(.bss) for .bss
+    lv_demo_benchmark.o(.text) refers to lv_timer.o(.text) for lv_timer_set_period
+    lv_demo_benchmark.o(.text) refers to lv_obj_tree.o(.text) for lv_obj_clean
+    lv_demo_benchmark.o(.text) refers to lv_flex.o(.text) for lv_obj_set_flex_flow
+    lv_demo_benchmark.o(.text) refers to lv_table.o(.text) for lv_table_create
+    lv_demo_benchmark.o(.text) refers to lv_printf.o(.text) for lv_snprintf
+    lv_demo_benchmark.o(.text) refers to lv_disp.o(.text) for _lv_disp_get_refr_timer
+    lv_demo_benchmark.o(.data) refers to lv_demo_benchmark.o(.conststring) for .conststring
+    lv_demo_benchmark.o(.data) refers to lv_demo_benchmark.o(.text) for rectangle_cb
+    img_benchmark_cogwheel_alpha16.o(.constdata) refers to img_benchmark_cogwheel_alpha16.o(.constdata) for img_benchmark_cogwheel_alpha16_map
+    img_benchmark_cogwheel_argb.o(.constdata) refers to img_benchmark_cogwheel_argb.o(.constdata) for img_benchmark_cogwheel_argb_map
+    img_benchmark_cogwheel_chroma_keyed.o(.constdata) refers to img_benchmark_cogwheel_chroma_keyed.o(.constdata) for img_benchmark_cogwheel_chroma_keyed_map
+    img_benchmark_cogwheel_indexed16.o(.constdata) refers to img_benchmark_cogwheel_indexed16.o(.constdata) for img_benchmark_cogwheel_indexed16_map
+    img_benchmark_cogwheel_rgb.o(.constdata) refers to img_benchmark_cogwheel_rgb.o(.constdata) for img_benchmark_cogwheel_rgb_map
+    img_benchmark_cogwheel_rgb565a8.o(.constdata) refers to img_benchmark_cogwheel_rgb565a8.o(.constdata) for img_benchmark_cogwheel_rgb565a8_map
+    lv_font_bechmark_montserrat_12_compr_az.c.o(.constdata) refers to lv_font_bechmark_montserrat_12_compr_az.c.o(.constdata) for kern_class_values
+    lv_font_bechmark_montserrat_12_compr_az.c.o(.constdata) refers to lv_font_bechmark_montserrat_12_compr_az.c.o(.constdata) for kern_left_class_mapping
+    lv_font_bechmark_montserrat_12_compr_az.c.o(.constdata) refers to lv_font_bechmark_montserrat_12_compr_az.c.o(.constdata) for kern_right_class_mapping
+    lv_font_bechmark_montserrat_12_compr_az.c.o(.data) refers to lv_font_bechmark_montserrat_12_compr_az.c.o(.constdata) for gylph_bitmap
+    lv_font_bechmark_montserrat_12_compr_az.c.o(.data) refers to lv_font_bechmark_montserrat_12_compr_az.c.o(.constdata) for glyph_dsc
+    lv_font_bechmark_montserrat_12_compr_az.c.o(.data) refers to lv_font_bechmark_montserrat_12_compr_az.c.o(.constdata) for cmaps
+    lv_font_bechmark_montserrat_12_compr_az.c.o(.data) refers to lv_font_bechmark_montserrat_12_compr_az.c.o(.constdata) for kern_classes
+    lv_font_bechmark_montserrat_12_compr_az.c.o(.data) refers to lv_font_fmt_txt.o(.text) for lv_font_get_glyph_dsc_fmt_txt
+    lv_font_bechmark_montserrat_12_compr_az.c.o(.data) refers to lv_font_bechmark_montserrat_12_compr_az.c.o(.data) for font_dsc
+    lv_font_bechmark_montserrat_16_compr_az.c.o(.constdata) refers to lv_font_bechmark_montserrat_16_compr_az.c.o(.constdata) for kern_class_values
+    lv_font_bechmark_montserrat_16_compr_az.c.o(.constdata) refers to lv_font_bechmark_montserrat_16_compr_az.c.o(.constdata) for kern_left_class_mapping
+    lv_font_bechmark_montserrat_16_compr_az.c.o(.constdata) refers to lv_font_bechmark_montserrat_16_compr_az.c.o(.constdata) for kern_right_class_mapping
+    lv_font_bechmark_montserrat_16_compr_az.c.o(.data) refers to lv_font_bechmark_montserrat_16_compr_az.c.o(.constdata) for gylph_bitmap
+    lv_font_bechmark_montserrat_16_compr_az.c.o(.data) refers to lv_font_bechmark_montserrat_16_compr_az.c.o(.constdata) for glyph_dsc
+    lv_font_bechmark_montserrat_16_compr_az.c.o(.data) refers to lv_font_bechmark_montserrat_16_compr_az.c.o(.constdata) for cmaps
+    lv_font_bechmark_montserrat_16_compr_az.c.o(.data) refers to lv_font_bechmark_montserrat_16_compr_az.c.o(.constdata) for kern_classes
+    lv_font_bechmark_montserrat_16_compr_az.c.o(.data) refers to lv_font_fmt_txt.o(.text) for lv_font_get_glyph_dsc_fmt_txt
+    lv_font_bechmark_montserrat_16_compr_az.c.o(.data) refers to lv_font_bechmark_montserrat_16_compr_az.c.o(.data) for font_dsc
+    lv_font_bechmark_montserrat_28_compr_az.c.o(.constdata) refers to lv_font_bechmark_montserrat_28_compr_az.c.o(.constdata) for kern_class_values
+    lv_font_bechmark_montserrat_28_compr_az.c.o(.constdata) refers to lv_font_bechmark_montserrat_28_compr_az.c.o(.constdata) for kern_left_class_mapping
+    lv_font_bechmark_montserrat_28_compr_az.c.o(.constdata) refers to lv_font_bechmark_montserrat_28_compr_az.c.o(.constdata) for kern_right_class_mapping
+    lv_font_bechmark_montserrat_28_compr_az.c.o(.data) refers to lv_font_bechmark_montserrat_28_compr_az.c.o(.constdata) for gylph_bitmap
+    lv_font_bechmark_montserrat_28_compr_az.c.o(.data) refers to lv_font_bechmark_montserrat_28_compr_az.c.o(.constdata) for glyph_dsc
+    lv_font_bechmark_montserrat_28_compr_az.c.o(.data) refers to lv_font_bechmark_montserrat_28_compr_az.c.o(.constdata) for cmaps
+    lv_font_bechmark_montserrat_28_compr_az.c.o(.data) refers to lv_font_bechmark_montserrat_28_compr_az.c.o(.constdata) for kern_classes
+    lv_font_bechmark_montserrat_28_compr_az.c.o(.data) refers to lv_font_fmt_txt.o(.text) for lv_font_get_glyph_dsc_fmt_txt
+    lv_font_bechmark_montserrat_28_compr_az.c.o(.data) refers to lv_font_bechmark_montserrat_28_compr_az.c.o(.data) for font_dsc
+    lv_demo_widgets.o(.text) refers to lv_obj_tree.o(.text) for lv_obj_get_parent
+    lv_demo_widgets.o(.text) refers to lv_obj_pos.o(.text) for lv_obj_get_width
+    lv_demo_widgets.o(.text) refers to lv_hal_disp.o(.text) for lv_disp_get_dpi
+    lv_demo_widgets.o(.text) refers to lv_math.o(.text) for lv_map
+    lv_demo_widgets.o(.text) refers to lv_obj_style_gen.o(.text) for lv_obj_set_style_opa
+    lv_demo_widgets.o(.text) refers to lv_event.o(.text) for lv_event_get_code
+    lv_demo_widgets.o(.text) refers to lv_anim.o(.text) for lv_anim_init
+    lv_demo_widgets.o(.text) refers to lv_color.o(.text) for lv_palette_main
+    lv_demo_widgets.o(.text) refers to lv_theme_default.o(.text) for lv_theme_default_init
+    lv_demo_widgets.o(.text) refers to lv_style_gen.o(.text) for lv_style_set_text_color
+    lv_demo_widgets.o(.text) refers to lv_chart.o(.text) for lv_chart_set_series_color
+    lv_demo_widgets.o(.text) refers to lv_obj.o(.text) for lv_obj_create
+    lv_demo_widgets.o(.text) refers to lv_obj_style.o(.text) for lv_obj_remove_style
+    lv_demo_widgets.o(.text) refers to lv_flex.o(.text) for lv_obj_set_flex_flow
+    lv_demo_widgets.o(.text) refers to lv_demo_widgets.o(.data) for .data
+    lv_demo_widgets.o(.text) refers to lv_btn.o(.text) for lv_btn_create
+    lv_demo_widgets.o(.text) refers to lv_grid.o(.text) for lv_obj_set_grid_dsc_array
+    lv_demo_widgets.o(.text) refers to lv_img.o(.text) for lv_img_create
+    lv_demo_widgets.o(.text) refers to lv_label.o(.text) for lv_label_create
+    lv_demo_widgets.o(.text) refers to lv_draw_rect.o(.text) for lv_draw_rect_dsc_init
+    lv_demo_widgets.o(.text) refers to memmovea.o(.text) for __aeabi_memcpy4
+    lv_demo_widgets.o(.text) refers to lv_printf.o(.text) for lv_snprintf
+    lv_demo_widgets.o(.text) refers to lv_demo_widgets.o(.constdata) for .constdata
+    lv_demo_widgets.o(.text) refers to lv_theme.o(.text) for lv_theme_get_color_primary
+    lv_demo_widgets.o(.text) refers to lv_checkbox.o(.text) for lv_checkbox_create
+    lv_demo_widgets.o(.text) refers to lv_meter.o(.text) for lv_meter_set_indicator_value
+    lv_demo_widgets.o(.text) refers to img_clothes.o(.constdata) for img_clothes
+    lv_demo_widgets.o(.text) refers to lv_draw_mask.o(.text) for lv_draw_mask_line_points_init
+    lv_demo_widgets.o(.text) refers to lv_area.o(.text) for _lv_area_intersect
+    lv_demo_widgets.o(.text) refers to lv_txt.o(.text) for lv_txt_get_size
+    lv_demo_widgets.o(.text) refers to lv_draw_label.o(.text) for lv_draw_label_dsc_init
+    lv_demo_widgets.o(.text) refers to lv_group.o(.text) for lv_group_get_default
+    lv_demo_widgets.o(.text) refers to lv_timer.o(.text) for lv_timer_create
+    lv_demo_widgets.o(.text) refers to lv_demo_widgets.o(.bss) for .bss
+    lv_demo_widgets.o(.text) refers to lv_bar.o(.text) for lv_bar_get_value
+    lv_demo_widgets.o(.text) refers to lv_calendar.o(.text) for lv_calendar_get_pressed_date
+    lv_demo_widgets.o(.text) refers to lv_textarea.o(.text) for lv_textarea_set_text
+    lv_demo_widgets.o(.text) refers to lv_indev.o(.text) for lv_indev_get_act
+    lv_demo_widgets.o(.text) refers to lv_calendar_header_dropdown.o(.text) for lv_calendar_header_dropdown_create
+    lv_demo_widgets.o(.text) refers to lv_keyboard.o(.text) for lv_keyboard_set_textarea
+    lv_demo_widgets.o(.text) refers to lv_obj_scroll.o(.text) for lv_obj_scroll_to_view_recursive
+    lv_demo_widgets.o(.text) refers to lv_dropdown.o(.text) for lv_dropdown_create
+    lv_demo_widgets.o(.text) refers to lv_slider.o(.text) for lv_slider_create
+    lv_demo_widgets.o(.text) refers to lv_obj_draw.o(.text) for lv_obj_refresh_ext_draw_size
+    lv_demo_widgets.o(.text) refers to lv_switch.o(.text) for lv_switch_create
+    lv_demo_widgets.o(.text) refers to img_demo_widgets_avatar.o(.constdata) for img_demo_widgets_avatar
+    lv_demo_widgets.o(.text) refers to lv_style.o(.text) for lv_style_init
+    lv_demo_widgets.o(.text) refers to lv_tabview.o(.text) for lv_tabview_create
+    lv_demo_widgets.o(.text) refers to lv_disp.o(.text) for lv_disp_get_scr_act
+    lv_demo_widgets.o(.text) refers to lv_font_montserrat_14.o(.constdata) for lv_font_montserrat_14
+    lv_demo_widgets.o(.text) refers to img_lvgl_logo.o(.constdata) for img_lvgl_logo
+    lv_demo_widgets.o(.constdata) refers to lv_demo_widgets.o(.conststring) for .conststring
+    img_clothes.o(.constdata) refers to img_clothes.o(.constdata) for img_clothes_map
+    img_demo_widgets_avatar.o(.constdata) refers to img_demo_widgets_avatar.o(.constdata) for img_demo_widgets_avatar_map
+    img_lvgl_logo.o(.constdata) refers to img_lvgl_logo.o(.constdata) for img_lvgl_logo_map
+    event_groups.o(.text) refers to heap_4.o(.text) for pvPortMalloc
+    event_groups.o(.text) refers to list.o(.text) for vListInitialise
+    event_groups.o(.text) refers to tasks.o(.text) for vTaskSuspendAll
+    event_groups.o(.text) refers to port.o(.text) for vPortEnterCritical
+    queue.o(.text) refers to port.o(.text) for vPortEnterCritical
+    queue.o(.text) refers to list.o(.text) for vListInitialise
+    queue.o(.text) refers to tasks.o(.text) for xTaskRemoveFromEventList
+    queue.o(.text) refers to heap_4.o(.text) for pvPortMalloc
+    queue.o(.text) refers to memmovea.o(.text) for __aeabi_memcpy
+    queue.o(.text) refers to queue.o(.bss) for .bss
+    stream_buffer.o(.text) refers to memseta.o(.text) for memset
+    stream_buffer.o(.text) refers to heap_4.o(.text) for pvPortMalloc
+    stream_buffer.o(.text) refers to port.o(.text) for vPortEnterCritical
+    stream_buffer.o(.text) refers to memmovea.o(.text) for __aeabi_memcpy
+    stream_buffer.o(.text) refers to tasks.o(.text) for vTaskSetTimeOutState
+    tasks.o(.text) refers to port.o(.text) for vPortEnterCritical
+    tasks.o(.text) refers to list.o(.text) for vListInitialise
+    tasks.o(.text) refers to heap_4.o(.text) for pvPortMalloc
+    tasks.o(.text) refers to main.o(.text) for vApplicationTickHook
+    tasks.o(.text) refers to tasks.o(.data) for .data
+    tasks.o(.text) refers to tasks.o(.bss) for .bss
+    tasks.o(.text) refers to timers.o(.text) for xTimerCreateTimerTask
+    tasks.o(.text) refers to memseta.o(.text) for __aeabi_memset
+    timers.o(.text) refers to list.o(.text) for vListInsert
+    timers.o(.text) refers to tasks.o(.text) for xTaskGetSchedulerState
+    timers.o(.text) refers to queue.o(.text) for xQueueGenericSend
+    timers.o(.text) refers to heap_4.o(.text) for vPortFree
+    timers.o(.text) refers to port.o(.text) for vPortEnterCritical
+    timers.o(.text) refers to timers.o(.data) for .data
+    timers.o(.text) refers to timers.o(.bss) for .bss
+    heap_4.o(.text) refers to tasks.o(.text) for vTaskSuspendAll
+    heap_4.o(.text) refers to heap_4.o(.data) for .data
+    heap_4.o(.text) refers to heap_4.o(.bss) for .bss
+    port.o(.emb_text) refers to tasks.o(.text) for vTaskSwitchContext
+    port.o(.emb_text) refers to tasks.o(.data) for pxCurrentTCB
+    port.o(.text) refers to port.o(.emb_text) for __asm___6_port_c_39a90d8d__prvEnableVFP
+    port.o(.text) refers to tasks.o(.text) for xTaskIncrementTick
+    port.o(.text) refers to port.o(.data) for .data
+    port.o(.text) refers to system_stm32f4xx.o(.data) for SystemCoreClock
+    rtc.o(.text) refers to stm32f4xx_rcc.o(.text) for RCC_APB1PeriphClockCmd
+    rtc.o(.text) refers to stm32f4xx_pwr.o(.text) for PWR_BackupAccessCmd
+    rtc.o(.text) refers to stm32f4xx_rtc.o(.text) for RTC_WaitForSynchro
+    sqrt.o(i.__hardfp_sqrt) refers (Special) to iusefp.o(.text) for __I$use$fp
+    sqrt.o(i.__hardfp_sqrt) refers to dsqrt.o(.text) for _dsqrt
+    sqrt.o(i.__hardfp_sqrt) refers to errno.o(i.__set_errno) for __set_errno
+    sqrt.o(i.__softfp_sqrt) refers (Special) to iusefp.o(.text) for __I$use$fp
+    sqrt.o(i.__softfp_sqrt) refers to dsqrt.o(.text) for _dsqrt
+    sqrt.o(i.__softfp_sqrt) refers to errno.o(i.__set_errno) for __set_errno
+    sqrt.o(i.sqrt) refers (Special) to iusefp.o(.text) for __I$use$fp
+    sqrt.o(i.sqrt) refers to dsqrt.o(.text) for _dsqrt
+    sqrt.o(i.sqrt) refers to errno.o(i.__set_errno) for __set_errno
+    sqrt_x.o(i.____hardfp_sqrt$lsc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    sqrt_x.o(i.____hardfp_sqrt$lsc) refers to cdcmple.o(.text) for __aeabi_cdcmple
+    sqrt_x.o(i.____hardfp_sqrt$lsc) refers to errno.o(i.__set_errno) for __set_errno
+    sqrt_x.o(i.____hardfp_sqrt$lsc) refers to dsqrt.o(.text) for _dsqrt
+    sqrt_x.o(i.____softfp_sqrt$lsc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    sqrt_x.o(i.____softfp_sqrt$lsc) refers to cdcmple.o(.text) for __aeabi_cdcmple
+    sqrt_x.o(i.____softfp_sqrt$lsc) refers to errno.o(i.__set_errno) for __set_errno
+    sqrt_x.o(i.____softfp_sqrt$lsc) refers to dsqrt.o(.text) for _dsqrt
+    sqrt_x.o(i.__sqrt$lsc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    sqrt_x.o(i.__sqrt$lsc) refers to cdcmple.o(.text) for __aeabi_cdcmple
+    sqrt_x.o(i.__sqrt$lsc) refers to errno.o(i.__set_errno) for __set_errno
+    sqrt_x.o(i.__sqrt$lsc) refers to dsqrt.o(.text) for _dsqrt
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000F) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$00000011) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry12b.o(.ARM.Collect$$$$0000000E) for __rt_lib_shutdown_fini
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    uldiv.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    uldiv.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    printfb.o(i.__0fprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0fprintf$bare) refers to uart.o(.text) for fputc
+    printfb.o(i.__0printf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0printf$bare) refers to uart.o(.text) for fputc
+    printfb.o(i.__0printf$bare) refers to uart.o(.data) for __stdout
+    printfb.o(i.__0snprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0snprintf$bare) refers to printfb.o(i._snputc) for _snputc
+    printfb.o(i.__0sprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0sprintf$bare) refers to printfb.o(i._sputc) for _sputc
+    printfb.o(i.__0vfprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0vfprintf$bare) refers to uart.o(.text) for fputc
+    printfb.o(i.__0vprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0vprintf$bare) refers to uart.o(.text) for fputc
+    printfb.o(i.__0vprintf$bare) refers to uart.o(.data) for __stdout
+    printfb.o(i.__0vsnprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0vsnprintf$bare) refers to printfb.o(i._snputc) for _snputc
+    printfb.o(i.__0vsprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0vsprintf$bare) refers to printfb.o(i._sputc) for _sputc
+    printf0.o(i.__0fprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0fprintf$0) refers to uart.o(.text) for fputc
+    printf0.o(i.__0printf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0printf$0) refers to uart.o(.text) for fputc
+    printf0.o(i.__0printf$0) refers to uart.o(.data) for __stdout
+    printf0.o(i.__0snprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0snprintf$0) refers to printf0.o(i._snputc) for _snputc
+    printf0.o(i.__0sprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0sprintf$0) refers to printf0.o(i._sputc) for _sputc
+    printf0.o(i.__0vfprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0vfprintf$0) refers to uart.o(.text) for fputc
+    printf0.o(i.__0vprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0vprintf$0) refers to uart.o(.text) for fputc
+    printf0.o(i.__0vprintf$0) refers to uart.o(.data) for __stdout
+    printf0.o(i.__0vsnprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0vsnprintf$0) refers to printf0.o(i._snputc) for _snputc
+    printf0.o(i.__0vsprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0vsprintf$0) refers to printf0.o(i._sputc) for _sputc
+    printf1.o(i.__0fprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0fprintf$1) refers to uart.o(.text) for fputc
+    printf1.o(i.__0printf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0printf$1) refers to uart.o(.text) for fputc
+    printf1.o(i.__0printf$1) refers to uart.o(.data) for __stdout
+    printf1.o(i.__0snprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0snprintf$1) refers to printf1.o(i._snputc) for _snputc
+    printf1.o(i.__0sprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0sprintf$1) refers to printf1.o(i._sputc) for _sputc
+    printf1.o(i.__0vfprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0vfprintf$1) refers to uart.o(.text) for fputc
+    printf1.o(i.__0vprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0vprintf$1) refers to uart.o(.text) for fputc
+    printf1.o(i.__0vprintf$1) refers to uart.o(.data) for __stdout
+    printf1.o(i.__0vsnprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0vsnprintf$1) refers to printf1.o(i._snputc) for _snputc
+    printf1.o(i.__0vsprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0vsprintf$1) refers to printf1.o(i._sputc) for _sputc
+    printf1.o(i._printf_core) refers to uidiv.o(.text) for __aeabi_uidivmod
+    printf2.o(i.__0fprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0fprintf$2) refers to uart.o(.text) for fputc
+    printf2.o(i.__0printf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0printf$2) refers to uart.o(.text) for fputc
+    printf2.o(i.__0printf$2) refers to uart.o(.data) for __stdout
+    printf2.o(i.__0snprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0snprintf$2) refers to printf2.o(i._snputc) for _snputc
+    printf2.o(i.__0sprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0sprintf$2) refers to printf2.o(i._sputc) for _sputc
+    printf2.o(i.__0vfprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0vfprintf$2) refers to uart.o(.text) for fputc
+    printf2.o(i.__0vprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0vprintf$2) refers to uart.o(.text) for fputc
+    printf2.o(i.__0vprintf$2) refers to uart.o(.data) for __stdout
+    printf2.o(i.__0vsnprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0vsnprintf$2) refers to printf2.o(i._snputc) for _snputc
+    printf2.o(i.__0vsprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0vsprintf$2) refers to printf2.o(i._sputc) for _sputc
+    printf3.o(i.__0fprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0fprintf$3) refers to uart.o(.text) for fputc
+    printf3.o(i.__0printf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0printf$3) refers to uart.o(.text) for fputc
+    printf3.o(i.__0printf$3) refers to uart.o(.data) for __stdout
+    printf3.o(i.__0snprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0snprintf$3) refers to printf3.o(i._snputc) for _snputc
+    printf3.o(i.__0sprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0sprintf$3) refers to printf3.o(i._sputc) for _sputc
+    printf3.o(i.__0vfprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0vfprintf$3) refers to uart.o(.text) for fputc
+    printf3.o(i.__0vprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0vprintf$3) refers to uart.o(.text) for fputc
+    printf3.o(i.__0vprintf$3) refers to uart.o(.data) for __stdout
+    printf3.o(i.__0vsnprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0vsnprintf$3) refers to printf3.o(i._snputc) for _snputc
+    printf3.o(i.__0vsprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0vsprintf$3) refers to printf3.o(i._sputc) for _sputc
+    printf3.o(i._printf_core) refers to uidiv.o(.text) for __aeabi_uidivmod
+    printf4.o(i.__0fprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0fprintf$4) refers to uart.o(.text) for fputc
+    printf4.o(i.__0printf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0printf$4) refers to uart.o(.text) for fputc
+    printf4.o(i.__0printf$4) refers to uart.o(.data) for __stdout
+    printf4.o(i.__0snprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0snprintf$4) refers to printf4.o(i._snputc) for _snputc
+    printf4.o(i.__0sprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0sprintf$4) refers to printf4.o(i._sputc) for _sputc
+    printf4.o(i.__0vfprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0vfprintf$4) refers to uart.o(.text) for fputc
+    printf4.o(i.__0vprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0vprintf$4) refers to uart.o(.text) for fputc
+    printf4.o(i.__0vprintf$4) refers to uart.o(.data) for __stdout
+    printf4.o(i.__0vsnprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0vsnprintf$4) refers to printf4.o(i._snputc) for _snputc
+    printf4.o(i.__0vsprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0vsprintf$4) refers to printf4.o(i._sputc) for _sputc
+    printf4.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printf5.o(i.__0fprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0fprintf$5) refers to uart.o(.text) for fputc
+    printf5.o(i.__0printf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0printf$5) refers to uart.o(.text) for fputc
+    printf5.o(i.__0printf$5) refers to uart.o(.data) for __stdout
+    printf5.o(i.__0snprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0snprintf$5) refers to printf5.o(i._snputc) for _snputc
+    printf5.o(i.__0sprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0sprintf$5) refers to printf5.o(i._sputc) for _sputc
+    printf5.o(i.__0vfprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0vfprintf$5) refers to uart.o(.text) for fputc
+    printf5.o(i.__0vprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0vprintf$5) refers to uart.o(.text) for fputc
+    printf5.o(i.__0vprintf$5) refers to uart.o(.data) for __stdout
+    printf5.o(i.__0vsnprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0vsnprintf$5) refers to printf5.o(i._snputc) for _snputc
+    printf5.o(i.__0vsprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0vsprintf$5) refers to printf5.o(i._sputc) for _sputc
+    printf5.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printf6.o(i.__0fprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0fprintf$6) refers to uart.o(.text) for fputc
+    printf6.o(i.__0printf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0printf$6) refers to uart.o(.text) for fputc
+    printf6.o(i.__0printf$6) refers to uart.o(.data) for __stdout
+    printf6.o(i.__0snprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0snprintf$6) refers to printf6.o(i._snputc) for _snputc
+    printf6.o(i.__0sprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0sprintf$6) refers to printf6.o(i._sputc) for _sputc
+    printf6.o(i.__0vfprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0vfprintf$6) refers to uart.o(.text) for fputc
+    printf6.o(i.__0vprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0vprintf$6) refers to uart.o(.text) for fputc
+    printf6.o(i.__0vprintf$6) refers to uart.o(.data) for __stdout
+    printf6.o(i.__0vsnprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0vsnprintf$6) refers to printf6.o(i._snputc) for _snputc
+    printf6.o(i.__0vsprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0vsprintf$6) refers to printf6.o(i._sputc) for _sputc
+    printf6.o(i._printf_core) refers to printf6.o(i._printf_pre_padding) for _printf_pre_padding
+    printf6.o(i._printf_core) refers to uidiv.o(.text) for __aeabi_uidivmod
+    printf6.o(i._printf_core) refers to printf6.o(i._printf_post_padding) for _printf_post_padding
+    printf7.o(i.__0fprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0fprintf$7) refers to uart.o(.text) for fputc
+    printf7.o(i.__0printf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0printf$7) refers to uart.o(.text) for fputc
+    printf7.o(i.__0printf$7) refers to uart.o(.data) for __stdout
+    printf7.o(i.__0snprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0snprintf$7) refers to printf7.o(i._snputc) for _snputc
+    printf7.o(i.__0sprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0sprintf$7) refers to printf7.o(i._sputc) for _sputc
+    printf7.o(i.__0vfprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0vfprintf$7) refers to uart.o(.text) for fputc
+    printf7.o(i.__0vprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0vprintf$7) refers to uart.o(.text) for fputc
+    printf7.o(i.__0vprintf$7) refers to uart.o(.data) for __stdout
+    printf7.o(i.__0vsnprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0vsnprintf$7) refers to printf7.o(i._snputc) for _snputc
+    printf7.o(i.__0vsprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0vsprintf$7) refers to printf7.o(i._sputc) for _sputc
+    printf7.o(i._printf_core) refers to printf7.o(i._printf_pre_padding) for _printf_pre_padding
+    printf7.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printf7.o(i._printf_core) refers to printf7.o(i._printf_post_padding) for _printf_post_padding
+    printf8.o(i.__0fprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0fprintf$8) refers to uart.o(.text) for fputc
+    printf8.o(i.__0printf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0printf$8) refers to uart.o(.text) for fputc
+    printf8.o(i.__0printf$8) refers to uart.o(.data) for __stdout
+    printf8.o(i.__0snprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0snprintf$8) refers to printf8.o(i._snputc) for _snputc
+    printf8.o(i.__0sprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0sprintf$8) refers to printf8.o(i._sputc) for _sputc
+    printf8.o(i.__0vfprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0vfprintf$8) refers to uart.o(.text) for fputc
+    printf8.o(i.__0vprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0vprintf$8) refers to uart.o(.text) for fputc
+    printf8.o(i.__0vprintf$8) refers to uart.o(.data) for __stdout
+    printf8.o(i.__0vsnprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0vsnprintf$8) refers to printf8.o(i._snputc) for _snputc
+    printf8.o(i.__0vsprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0vsprintf$8) refers to printf8.o(i._sputc) for _sputc
+    printf8.o(i._printf_core) refers to printf8.o(i._printf_pre_padding) for _printf_pre_padding
+    printf8.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printf8.o(i._printf_core) refers to printf8.o(i._printf_post_padding) for _printf_post_padding
+    printfa.o(i.__0fprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0fprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0fprintf) refers to uart.o(.text) for fputc
+    printfa.o(i.__0printf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0printf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0printf) refers to uart.o(.text) for fputc
+    printfa.o(i.__0printf) refers to uart.o(.data) for __stdout
+    printfa.o(i.__0snprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0snprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0snprintf) refers to printfa.o(i._snputc) for _snputc
+    printfa.o(i.__0sprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0sprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0sprintf) refers to printfa.o(i._sputc) for _sputc
+    printfa.o(i.__0vfprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vfprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vfprintf) refers to uart.o(.text) for fputc
+    printfa.o(i.__0vprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vprintf) refers to uart.o(.text) for fputc
+    printfa.o(i.__0vprintf) refers to uart.o(.data) for __stdout
+    printfa.o(i.__0vsnprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vsnprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vsnprintf) refers to printfa.o(i._snputc) for _snputc
+    printfa.o(i.__0vsprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vsprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vsprintf) refers to printfa.o(i._sputc) for _sputc
+    printfa.o(i._fp_digits) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._fp_digits) refers to dmul.o(.text) for __aeabi_dmul
+    printfa.o(i._fp_digits) refers to ddiv.o(.text) for __aeabi_ddiv
+    printfa.o(i._fp_digits) refers to cdrcmple.o(.text) for __aeabi_cdrcmple
+    printfa.o(i._fp_digits) refers to dadd.o(.text) for __aeabi_dadd
+    printfa.o(i._fp_digits) refers to dfixul.o(.text) for __aeabi_d2ulz
+    printfa.o(i._fp_digits) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printfa.o(i._printf_core) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._printf_core) refers to printfa.o(i._printf_pre_padding) for _printf_pre_padding
+    printfa.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printfa.o(i._printf_core) refers to printfa.o(i._printf_post_padding) for _printf_post_padding
+    printfa.o(i._printf_core) refers to printfa.o(i._fp_digits) for _fp_digits
+    printfa.o(i._printf_core) refers to uidiv.o(.text) for __aeabi_uidivmod
+    printfa.o(i._printf_post_padding) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._printf_pre_padding) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._snputc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._sputc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    __0sscanf.o(.text) refers to scanf_char.o(.text) for __vfscanf_char
+    __0sscanf.o(.text) refers to _sgetc.o(.text) for _sgetc
+    atoi.o(.text) refers to errno.o(i.__aeabi_errno_addr) for __aeabi_errno_addr
+    atoi.o(.text) refers to strtol.o(.text) for strtol
+    dmul.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dmul.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    dfltui.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dfltui.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    dfixui.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dfixui.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    f2d.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    cdcmple.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    cdrcmple.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to startup_stm32f40_41xxx.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to startup_stm32f40_41xxx.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry9a.o(.ARM.Collect$$$$0000000B) refers to main.o(.text) for main
+    entry9b.o(.ARM.Collect$$$$0000000C) refers to main.o(.text) for main
+    errno.o(i.__aeabi_errno_addr) refers to errno.o(.data) for .data
+    errno.o(i.__read_errno) refers to errno.o(.data) for .data
+    errno.o(i.__set_errno) refers to errno.o(.data) for .data
+    scanf_char.o(.text) refers to _scanf.o(.text) for __vfscanf
+    scanf_char.o(.text) refers to isspace_o.o(.text) for isspace
+    strtol.o(.text) refers to ctype_o.o(.text) for __rt_ctype_table
+    strtol.o(.text) refers to _strtoul.o(.text) for _strtoul
+    strtol.o(.text) refers to errno.o(i.__aeabi_errno_addr) for __aeabi_errno_addr
+    depilogue.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    depilogue.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    dadd.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    dadd.o(.text) refers to llsshr.o(.text) for __aeabi_lasr
+    dadd.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    ddiv.o(.text) refers to depilogue.o(.text) for _double_round
+    dsqrt.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    dsqrt.o(.text) refers to depilogue.o(.text) for _double_round
+    dfixul.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    dfixul.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+    isspace_c.o(.text) refers to ctype_c.o(.text) for __ctype_lookup
+    ctype_o.o(.text) refers to ctype_o.o(.constdata) for .constdata
+    ctype_o.o(.constdata) refers to ctype_o.o(.constdata) for __ctype_table
+    isalnum_o.o(.text) refers to ctype_o.o(.text) for __rt_ctype_table
+    isalpha_o.o(.text) refers to ctype_o.o(.text) for __rt_ctype_table
+    isblank_o.o(.text) refers to ctype_o.o(.constdata) for __ctype_table
+    iscntrl_o.o(.text) refers to ctype_o.o(.text) for __rt_ctype_table
+    isdigit_o.o(.text) refers to ctype_o.o(.text) for __rt_ctype_table
+    isgraph_o.o(.text) refers to ctype_o.o(.text) for __rt_ctype_table
+    islower_o.o(.text) refers to ctype_o.o(.text) for __rt_ctype_table
+    isprint_o.o(.text) refers to ctype_o.o(.text) for __rt_ctype_table
+    ispunct_o.o(.text) refers to ctype_o.o(.text) for __rt_ctype_table
+    isspace_o.o(.text) refers to ctype_o.o(.text) for __rt_ctype_table
+    isupper_o.o(.text) refers to ctype_o.o(.text) for __rt_ctype_table
+    isxdigit_o.o(.text) refers to ctype_o.o(.text) for __rt_ctype_table
+    _scanf.o(.text) refers (Weak) to _scanf_str.o(.text) for _scanf_string
+    _strtoul.o(.text) refers to _chval.o(.text) for _chval
+    _strtoul.o(.text) refers to errno.o(i.__aeabi_errno_addr) for __aeabi_errno_addr
+    ctype_c.o(.text) refers to ctype_c.o(.constdata) for .constdata
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing main.o(.rev16_text), (4 bytes).
+    Removing main.o(.revsh_text), (4 bytes).
+    Removing stm32f4xx_it.o(.rev16_text), (4 bytes).
+    Removing stm32f4xx_it.o(.revsh_text), (4 bytes).
+    Removing system_stm32f4xx.o(.rev16_text), (4 bytes).
+    Removing system_stm32f4xx.o(.revsh_text), (4 bytes).
+    Removing my_config.o(.rev16_text), (4 bytes).
+    Removing my_config.o(.revsh_text), (4 bytes).
+    Removing my_config.o(.emb_text), (16 bytes).
+    Removing my_config.o(.text), (2 bytes).
+    Removing my_lib.o(.rev16_text), (4 bytes).
+    Removing my_lib.o(.revsh_text), (4 bytes).
+    Removing my_reg.o(.rev16_text), (4 bytes).
+    Removing my_reg.o(.revsh_text), (4 bytes).
+    Removing my_reg.o(.text), (2 bytes).
+    Removing lvgl_font.o(.constdata), (18707 bytes).
+    Removing lvgl_font.o(.constdata), (880 bytes).
+    Removing lvgl_font.o(.constdata), (28 bytes).
+    Removing lvgl_font.o(.constdata), (40 bytes).
+    Removing lvgl_font.o(.constdata), (24 bytes).
+    Removing lvgl_font.o(.constdata), (28 bytes).
+    Removing lvgl_font.o(.data), (8 bytes).
+    Removing tupian.o(.constdata), (28800 bytes).
+    Removing tupian.o(.constdata), (12 bytes).
+    Removing buzzer.o(.rev16_text), (4 bytes).
+    Removing buzzer.o(.revsh_text), (4 bytes).
+    Removing key.o(.rev16_text), (4 bytes).
+    Removing key.o(.revsh_text), (4 bytes).
+    Removing led.o(.rev16_text), (4 bytes).
+    Removing led.o(.revsh_text), (4 bytes).
+    Removing exti.o(.rev16_text), (4 bytes).
+    Removing exti.o(.revsh_text), (4 bytes).
+    Removing timer.o(.rev16_text), (4 bytes).
+    Removing timer.o(.revsh_text), (4 bytes).
+    Removing at24cxx.o(.rev16_text), (4 bytes).
+    Removing at24cxx.o(.revsh_text), (4 bytes).
+    Removing iic.o(.rev16_text), (4 bytes).
+    Removing iic.o(.revsh_text), (4 bytes).
+    Removing lcd_font.o(.rev16_text), (4 bytes).
+    Removing lcd_font.o(.revsh_text), (4 bytes).
+    Removing lcd_image.o(.rev16_text), (4 bytes).
+    Removing lcd_image.o(.revsh_text), (4 bytes).
+    Removing lcd_image.o(.constdata), (153600 bytes).
+    Removing lcd_screen.o(.rev16_text), (4 bytes).
+    Removing lcd_screen.o(.revsh_text), (4 bytes).
+    Removing lcd_touch.o(.rev16_text), (4 bytes).
+    Removing lcd_touch.o(.revsh_text), (4 bytes).
+    Removing adc.o(.rev16_text), (4 bytes).
+    Removing adc.o(.revsh_text), (4 bytes).
+    Removing dht11.o(.rev16_text), (4 bytes).
+    Removing dht11.o(.revsh_text), (4 bytes).
+    Removing asrpro.o(.rev16_text), (4 bytes).
+    Removing asrpro.o(.revsh_text), (4 bytes).
+    Removing mq2.o(.rev16_text), (4 bytes).
+    Removing mq2.o(.revsh_text), (4 bytes).
+    Removing mq7.o(.rev16_text), (4 bytes).
+    Removing mq7.o(.revsh_text), (4 bytes).
+    Removing mq135.o(.rev16_text), (4 bytes).
+    Removing mq135.o(.revsh_text), (4 bytes).
+    Removing esp8266.o(.rev16_text), (4 bytes).
+    Removing esp8266.o(.revsh_text), (4 bytes).
+    Removing esp8266_gettime.o(.rev16_text), (4 bytes).
+    Removing esp8266_gettime.o(.revsh_text), (4 bytes).
+    Removing esp8266_getweather.o(.rev16_text), (4 bytes).
+    Removing esp8266_getweather.o(.revsh_text), (4 bytes).
+    Removing pir.o(.rev16_text), (4 bytes).
+    Removing pir.o(.revsh_text), (4 bytes).
+    Removing esp8266_connect_my_server.o(.rev16_text), (4 bytes).
+    Removing esp8266_connect_my_server.o(.revsh_text), (4 bytes).
+    Removing esp8266_connect_my_server.o(.text), (276 bytes).
+    Removing delay.o(.rev16_text), (4 bytes).
+    Removing delay.o(.revsh_text), (4 bytes).
+    Removing uart.o(.rev16_text), (4 bytes).
+    Removing uart.o(.revsh_text), (4 bytes).
+    Removing uart.o(.data), (4 bytes).
+    Removing stm32f4xx_gpio.o(.rev16_text), (4 bytes).
+    Removing stm32f4xx_gpio.o(.revsh_text), (4 bytes).
+    Removing stm32f4xx_rcc.o(.rev16_text), (4 bytes).
+    Removing stm32f4xx_rcc.o(.revsh_text), (4 bytes).
+    Removing stm32f4xx_exti.o(.rev16_text), (4 bytes).
+    Removing stm32f4xx_exti.o(.revsh_text), (4 bytes).
+    Removing stm32f4xx_syscfg.o(.rev16_text), (4 bytes).
+    Removing stm32f4xx_syscfg.o(.revsh_text), (4 bytes).
+    Removing misc.o(.rev16_text), (4 bytes).
+    Removing misc.o(.revsh_text), (4 bytes).
+    Removing stm32f4xx_tim.o(.rev16_text), (4 bytes).
+    Removing stm32f4xx_tim.o(.revsh_text), (4 bytes).
+    Removing stm32f4xx_usart.o(.rev16_text), (4 bytes).
+    Removing stm32f4xx_usart.o(.revsh_text), (4 bytes).
+    Removing stm32f4xx_spi.o(.rev16_text), (4 bytes).
+    Removing stm32f4xx_spi.o(.revsh_text), (4 bytes).
+    Removing stm32f4xx_spi.o(.text), (812 bytes).
+    Removing stm32f4xx_fsmc.o(.rev16_text), (4 bytes).
+    Removing stm32f4xx_fsmc.o(.revsh_text), (4 bytes).
+    Removing stm32f4xx_pwr.o(.rev16_text), (4 bytes).
+    Removing stm32f4xx_pwr.o(.revsh_text), (4 bytes).
+    Removing stm32f4xx_rtc.o(.rev16_text), (4 bytes).
+    Removing stm32f4xx_rtc.o(.revsh_text), (4 bytes).
+    Removing stm32f4xx_adc.o(.rev16_text), (4 bytes).
+    Removing stm32f4xx_adc.o(.revsh_text), (4 bytes).
+    Removing startup_stm32f40_41xxx.o(HEAP), (512 bytes).
+    Removing lv_draw_triangle.o(.text), (22 bytes).
+    Removing lv_draw_sw_letter.o(.constdata), (8 bytes).
+    Removing qrcodegen.o(.text), (4568 bytes).
+    Removing qrcodegen.o(.constdata), (392 bytes).
+    Removing qrcodegen.o(.conststring), (46 bytes).
+    Removing qrcodegen.o(.data), (4 bytes).
+    Removing lv_theme_basic.o(.text), (1924 bytes).
+    Removing lv_theme_basic.o(.bss), (36 bytes).
+    Removing lv_theme_basic.o(.data), (8 bytes).
+    Removing lv_theme_mono.o(.text), (2816 bytes).
+    Removing lv_theme_mono.o(.bss), (36 bytes).
+    Removing lv_theme_mono.o(.data), (8 bytes).
+    Removing lv_animimg.o(.text), (144 bytes).
+    Removing lv_animimg.o(.constdata), (28 bytes).
+    Removing lv_imgbtn.o(.text), (968 bytes).
+    Removing lv_imgbtn.o(.constdata), (28 bytes).
+    Removing lv_list.o(.text), (236 bytes).
+    Removing lv_msgbox.o(.text), (700 bytes).
+    Removing lv_span.o(.text), (3540 bytes).
+    Removing lv_span.o(.bss), (1284 bytes).
+    Removing lv_span.o(.constdata), (28 bytes).
+    Removing lv_font_loader.o(.text), (2156 bytes).
+    Removing lv_font_montserrat_32.o(.constdata), (41096 bytes).
+    Removing lv_font_montserrat_32.o(.constdata), (1264 bytes).
+    Removing lv_font_montserrat_32.o(.constdata), (124 bytes).
+    Removing lv_font_montserrat_32.o(.constdata), (40 bytes).
+    Removing lv_font_montserrat_32.o(.constdata), (158 bytes).
+    Removing lv_font_montserrat_32.o(.constdata), (158 bytes).
+    Removing lv_font_montserrat_32.o(.constdata), (2989 bytes).
+    Removing lv_font_montserrat_32.o(.constdata), (16 bytes).
+    Removing lv_font_montserrat_32.o(.constdata), (24 bytes).
+    Removing lv_font_montserrat_32.o(.constdata), (28 bytes).
+    Removing lv_font_montserrat_32.o(.data), (8 bytes).
+    Removing lv_anim_timeline.o(.text), (508 bytes).
+    Removing lv_lru.o(.text), (888 bytes).
+    Removing lv_txt.o(.data), (4 bytes).
+    Removing lv_canvas.o(.text), (3188 bytes).
+    Removing lv_canvas.o(.constdata), (28 bytes).
+    Removing lv_port_disp.o(.rev16_text), (4 bytes).
+    Removing lv_port_disp.o(.revsh_text), (4 bytes).
+    Removing lv_port_indev.o(.rev16_text), (4 bytes).
+    Removing lv_port_indev.o(.revsh_text), (4 bytes).
+    Removing lv_port_indev.o(.data), (4 bytes).
+    Removing lv_port_indev.o(.data), (4 bytes).
+    Removing lv_port_indev.o(.data), (4 bytes).
+    Removing lv_port_indev.o(.data), (4 bytes).
+    Removing lv_demo_benchmark.o(.text), (5438 bytes).
+    Removing lv_demo_benchmark.o(.bss), (512 bytes).
+    Removing lv_demo_benchmark.o(.constdata), (256 bytes).
+    Removing lv_demo_benchmark.o(.conststring), (938 bytes).
+    Removing lv_demo_benchmark.o(.data), (1812 bytes).
+    Removing img_benchmark_cogwheel_alpha16.o(.constdata), (5000 bytes).
+    Removing img_benchmark_cogwheel_alpha16.o(.constdata), (12 bytes).
+    Removing img_benchmark_cogwheel_argb.o(.constdata), (30000 bytes).
+    Removing img_benchmark_cogwheel_argb.o(.constdata), (12 bytes).
+    Removing img_benchmark_cogwheel_chroma_keyed.o(.constdata), (20000 bytes).
+    Removing img_benchmark_cogwheel_chroma_keyed.o(.constdata), (12 bytes).
+    Removing img_benchmark_cogwheel_indexed16.o(.constdata), (5064 bytes).
+    Removing img_benchmark_cogwheel_indexed16.o(.constdata), (12 bytes).
+    Removing img_benchmark_cogwheel_rgb.o(.constdata), (20000 bytes).
+    Removing img_benchmark_cogwheel_rgb.o(.constdata), (12 bytes).
+    Removing img_benchmark_cogwheel_rgb565a8.o(.constdata), (30000 bytes).
+    Removing img_benchmark_cogwheel_rgb565a8.o(.constdata), (12 bytes).
+    Removing lv_font_bechmark_montserrat_12_compr_az.c.o(.constdata), (628 bytes).
+    Removing lv_font_bechmark_montserrat_12_compr_az.c.o(.constdata), (224 bytes).
+    Removing lv_font_bechmark_montserrat_12_compr_az.c.o(.constdata), (40 bytes).
+    Removing lv_font_bechmark_montserrat_12_compr_az.c.o(.constdata), (28 bytes).
+    Removing lv_font_bechmark_montserrat_12_compr_az.c.o(.constdata), (28 bytes).
+    Removing lv_font_bechmark_montserrat_12_compr_az.c.o(.constdata), (154 bytes).
+    Removing lv_font_bechmark_montserrat_12_compr_az.c.o(.constdata), (16 bytes).
+    Removing lv_font_bechmark_montserrat_12_compr_az.c.o(.data), (24 bytes).
+    Removing lv_font_bechmark_montserrat_12_compr_az.c.o(.data), (28 bytes).
+    Removing lv_font_bechmark_montserrat_16_compr_az.c.o(.constdata), (940 bytes).
+    Removing lv_font_bechmark_montserrat_16_compr_az.c.o(.constdata), (224 bytes).
+    Removing lv_font_bechmark_montserrat_16_compr_az.c.o(.constdata), (40 bytes).
+    Removing lv_font_bechmark_montserrat_16_compr_az.c.o(.constdata), (28 bytes).
+    Removing lv_font_bechmark_montserrat_16_compr_az.c.o(.constdata), (28 bytes).
+    Removing lv_font_bechmark_montserrat_16_compr_az.c.o(.constdata), (154 bytes).
+    Removing lv_font_bechmark_montserrat_16_compr_az.c.o(.constdata), (16 bytes).
+    Removing lv_font_bechmark_montserrat_16_compr_az.c.o(.data), (24 bytes).
+    Removing lv_font_bechmark_montserrat_16_compr_az.c.o(.data), (28 bytes).
+    Removing lv_font_bechmark_montserrat_28_compr_az.c.o(.constdata), (2148 bytes).
+    Removing lv_font_bechmark_montserrat_28_compr_az.c.o(.constdata), (224 bytes).
+    Removing lv_font_bechmark_montserrat_28_compr_az.c.o(.constdata), (40 bytes).
+    Removing lv_font_bechmark_montserrat_28_compr_az.c.o(.constdata), (28 bytes).
+    Removing lv_font_bechmark_montserrat_28_compr_az.c.o(.constdata), (28 bytes).
+    Removing lv_font_bechmark_montserrat_28_compr_az.c.o(.constdata), (154 bytes).
+    Removing lv_font_bechmark_montserrat_28_compr_az.c.o(.constdata), (16 bytes).
+    Removing lv_font_bechmark_montserrat_28_compr_az.c.o(.data), (24 bytes).
+    Removing lv_font_bechmark_montserrat_28_compr_az.c.o(.data), (28 bytes).
+    Removing lv_demo_widgets.o(.text), (13560 bytes).
+    Removing lv_demo_widgets.o(.bss), (12 bytes).
+    Removing lv_demo_widgets.o(.constdata), (264 bytes).
+    Removing lv_demo_widgets.o(.conststring), (116 bytes).
+    Removing lv_demo_widgets.o(.data), (424 bytes).
+    Removing img_clothes.o(.constdata), (9408 bytes).
+    Removing img_clothes.o(.constdata), (12 bytes).
+    Removing img_demo_widgets_avatar.o(.constdata), (71148 bytes).
+    Removing img_demo_widgets_avatar.o(.constdata), (12 bytes).
+    Removing img_lvgl_logo.o(.constdata), (5418 bytes).
+    Removing img_lvgl_logo.o(.constdata), (12 bytes).
+    Removing stream_buffer.o(.text), (1854 bytes).
+    Removing rtc.o(.rev16_text), (4 bytes).
+    Removing rtc.o(.revsh_text), (4 bytes).
+
+205 unused section(s) (total 500302 bytes) removed from the image.
